@@ -5,6 +5,7 @@ Level 1
 
 Title "はじめの一歩"
 
+namespace MyGame
 /--
 ## 説明
 `X=X`といった形のゴールを閉じます。
