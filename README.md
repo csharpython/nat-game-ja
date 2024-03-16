@@ -1,2 +1,2 @@
 このレポジトリは
-https://github.com/hhu-adam/GameSkeletonのテンプレートを使用して作っています。
+https://github.com/hhu-adam/GameSkeleton のテンプレートを使用して作っています。
