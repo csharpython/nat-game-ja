@@ -1,4 +1,4 @@
-import Game.Levels.DemoWorld
+import Game.Levels.Tutorial
 
 -- Here's what we'll put on the title screen
 Title "自然数ゲーム"
@@ -10,12 +10,9 @@ Introduction
 "
 
 Info "
-Here you can put additional information about the game. It is accessible
-from the starting through the drop-down menu.
-
-For example: Game version, Credits, Link to Github and Zulip, etc.
-
-Use markdown.
+Githubのリンク：https://github.com/csharpython/nat-game-ja
+使ったテンプレート：https://github.com/hhu-adam/GameSkeleton
+Lean jaのDiscord：https://discord.com/invite/p32ZfnVawh
 "
 
 /-! Information to be displayed on the servers landing page. -/

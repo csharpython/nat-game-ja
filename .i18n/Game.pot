@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.6.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Tue Mar 12 08:55:00 2024\n"
+"POT-Creation-Date: Sat Mar 16 08:00:12 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -9,42 +9,58 @@ msgstr "Project-Id-Version: Game v4.6.0\n"
 "Content-Transfer-Encoding: 8bit"
 
 #: Game.Levels.Tutorial.L01_HelloWorld
-msgid "Hello World"
+msgid "はじめの一歩"
 msgstr ""
 
 #: Game.Levels.Tutorial.L01_HelloWorld
-msgid "This text is shown as first message when the level is played.
-\n"
-"You can insert hints in the proof below. They will appear in this side panel
-\n"
-"depending on the proof a user provides."
+msgid "「反射律」って知ってますか？\n"
+"「反射律」とは、ある関係Rについて、xRxが成り立つことを表します。\n"
+"たとえば、＝などがそうですね。\n"
+"今回のような場合なら、"rfl"を使えます！"
 msgstr ""
 
 #: Game.Levels.Tutorial.L01_HelloWorld
-msgid "You can either start using `«{h}»` or `«{g}»`."
+msgid "左辺と右辺が同じ時は、rflを使うとゴールを閉じれます。"
 msgstr ""
 
 #: Game.Levels.Tutorial.L01_HelloWorld
-msgid "You should use `«{h}»` now."
+msgid "「33 * x + 24 * y = 33 * x + 24 * yである。だから33 * x + 24 * y = 33 * x + 24 * y なのだ。」\n"
+"では済まない命題も結構あるのですが...まあそれの示し方は次のステージで話しましょう。\n"
+"ちなみに、このゲームのrflはオリジナルのrflに比べて弱体化されています。\n"
+"そうした理由はゲーム性を上げるためです。"
 msgstr ""
 
-#: Game.Levels.Tutorial.L01_HelloWorld
-msgid "You should use `«{g}»` now."
+#: Game.Levels.Tutorial.L02_ReWrite
+msgid "Eq."
 msgstr ""
 
-#: Game.Levels.Tutorial.L01_HelloWorld
-msgid "This last message appears if the level is solved."
+#: Game.Levels.Tutorial.L02_ReWrite
+msgid "同じことを表すものってよくありますよね。\n"
+"例えば、「力」と「パワー」や、「1の次の数」と「2」などがあります。\n"
+"Lean4で同じことを表すものを置き換えるときは"rewrite"を使います。\n"
+"こうすることで、「力」と「パワー」が「力」と「力」になるので、rflが使えます！\n"
+""
 msgstr ""
 
-#: Game.Levels.DemoWorld
+#: Game.Levels.Tutorial.L02_ReWrite
+msgid "rewrite[h]"
+msgstr ""
+
+#: Game.Levels.Tutorial.L02_ReWrite
+msgid "いいですね！Lean4では、仮定として用意した等式だけでなく、\n"
+"すでに分かったこと、「定理」(もしくは「補題」)を番う方法もあります！\n"
+"詳細は次のステージで！\n"
+"ちなみに、`rewrite`より強いTactic`rw`がありますが、\n"
+"それを使わなかった理由はもちろん、ゲーム性を上げるためです。"
+msgstr ""
+
+#: Game.Levels.Tutorial
 msgid "Tutorial"
 msgstr ""
 
-#: Game.Levels.DemoWorld
-msgid "
-\n"
-"チュートリアルです。このワールドでLean4に慣れましょう。
-\n"
+#: Game.Levels.Tutorial
+msgid "\n"
+"チュートリアルです。このワールドでLean4に慣れましょう。\n"
 ""
 msgstr ""
 
@@ -53,32 +69,18 @@ msgid "自然数ゲーム"
 msgstr ""
 
 #: Game
-msgid "
-\n"
-"こんにちは。自然数ゲームへようこそ。
-\n"
-"このゲームは、Leanを使って様々な自然数の性質を証明します。
-\n"
-"おっと、そんなに身構える必要はありませんよ。
-\n"
+msgid "\n"
+"こんにちは。自然数ゲームへようこそ。\n"
+"このゲームは、Leanを使って様々な自然数の性質を証明します。\n"
+"おっと、そんなに身構える必要はありませんよ。\n"
 ""
 msgstr ""
 
 #: Game
-msgid "
-\n"
-"Here you can put additional information about the game. It is accessible
-\n"
-"from the starting through the drop-down menu.
-\n"
-"
-\n"
-"For example: Game version, Credits, Link to Github and Zulip, etc.
-\n"
-"
-\n"
-"Use markdown.
-\n"
+msgid "\n"
+"Githubのリンク：https://github.com/csharpython/nat-game-ja\n"
+"使ったテンプレート：https://github.com/hhu-adam/GameSkeleton\n"
+"Lean jaのDiscord：https://discord.com/invite/p32ZfnVawh\n"
 ""
 msgstr ""
 

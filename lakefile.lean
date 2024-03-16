@@ -2,7 +2,7 @@ import Lake
 open Lake DSL
 
 -- Using this assumes that each dependency has a tag of the form `v4.X.0`.
-def leanVersion : String := s!"v{Lean.versionString}"
+def leanVersion : String := s!"v4.6.0"
 
 def LocalGameServer : Dependency := {
   name := `GameServer

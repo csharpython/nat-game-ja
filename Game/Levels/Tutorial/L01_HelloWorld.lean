@@ -3,26 +3,24 @@ import Game.Metadata
 World "Tutorial"
 Level 1
 
-Title "Hello World"
+Title "はじめの一歩"
 
-Introduction "This text is shown as first message when the level is played.
-You can insert hints in the proof below. They will appear in this side panel
-depending on the proof a user provides."
+Introduction "「反射律」って知ってますか？
+「反射律」とは、ある関係Rについて、xRxが成り立つことを表します。
+たとえば、＝などがそうですね。
+今回のような場合なら、\"rfl\"を使えます！"
 
-Statement (h : x = 2) (g: y = 4) : x + x = y := by
-  Hint "You can either start using `{h}` or `{g}`."
-  Branch
-    rw [g]
-    Hint "You should use `{h}` now."
-    rw [h]
-  rw [h]
-  Hint "You should use `{g}` now."
-  rw [g]
+Statement (x y:Nat) : 33 * x + 24 * y = 33 * x + 24 * y := by
+  Hint "左辺と右辺が同じ時は、rflを使うとゴールを閉じれます。"
+  rfl
 
-Conclusion "This last message appears if the level is solved."
+Conclusion "「33 * x + 24 * y = 33 * x + 24 * yである。だから33 * x + 24 * y = 33 * x + 24 * y なのだ。」
+では済まない命題も結構あるのですが...まあそれの示し方は次のステージで話しましょう。
+ちなみに、このゲームのrflはオリジナルのrflに比べて弱体化されています。
+そうした理由はゲーム性を上げるためです。"
 
 /- Use these commands to add items to the game's inventory. -/
 
-NewTactic rw rfl
+NewTactic rfl
 -- NewLemma Nat.add_comm Nat.add_assoc
 -- NewDefinition Nat Add Eq
