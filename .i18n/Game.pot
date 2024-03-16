@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.6.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sat Mar 16 08:00:12 2024\n"
+"POT-Creation-Date: Sat Mar 16 13:25:51 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -10,6 +10,18 @@ msgstr "Project-Id-Version: Game v4.6.0\n"
 
 #: Game.Levels.Tutorial.L01_HelloWorld
 msgid "はじめの一歩"
+msgstr ""
+
+#: Game.Levels.Tutorial.L01_HelloWorld
+msgid "## 説明\n"
+"`X=X`といった形のゴールを閉じます。\n"
+"これは、**定義として**等しい場合のみ有効です。\n"
+"ただ、このゲームでは関数の値は「公理」として実装されていることが多いので、\n"
+"基本的には左辺と右辺が**完全に**一致する場合のみ有効だと思います。\n"
+"(ちなみに、公理は数学の前提的なもの)\n"
+"## 補足情報\n"
+"このゲームのrflはオリジナルのrflに比べて弱体化されています。\n"
+"そうした理由はゲーム性を上げるためです。"
 msgstr ""
 
 #: Game.Levels.Tutorial.L01_HelloWorld
@@ -35,6 +47,27 @@ msgid "Eq."
 msgstr ""
 
 #: Game.Levels.Tutorial.L02_ReWrite
+msgid "## 説明\n"
+"例えば、`X=Y`という形の仮定や定理`h`があった場合、rw[h]を使用することで、\n"
+"ゴール内の**全ての**`X`が`Y`に置き換わります。\n"
+"\n"
+"## 変種\n"
+"`rw[←h]` : `Y`が`X`になります。\n"
+"\n"
+"`rw[h1,h2]` : `rw[h1]`,`rw[h2]`を順番に実行します。\n"
+"\n"
+"`rw[h1,h2,h3]` : もちろん3つ以上の置き換えも可能です。\n"
+"\n"
+"`rw[h1] at h2` : **`h2`に対して**`rw[h1]`を実行します。\n"
+"\n"
+"もしかしたら、私が把握できていないだけで他にもあるかも知れません！\n"
+"\n"
+"## 補足情報\n"
+"本来の`rw`は置き換え後に`rfl`を実行します。\n"
+"そうしなかった理由は、もちろんゲーム性です。"
+msgstr ""
+
+#: Game.Levels.Tutorial.L02_ReWrite
 msgid "同じことを表すものってよくありますよね。\n"
 "例えば、「力」と「パワー」や、「1の次の数」と「2」などがあります。\n"
 "Lean4で同じことを表すものを置き換えるときは"rewrite"を使います。\n"
@@ -49,7 +82,8 @@ msgstr ""
 #: Game.Levels.Tutorial.L02_ReWrite
 msgid "いいですね！Lean4では、仮定として用意した等式だけでなく、\n"
 "すでに分かったこと、「定理」(もしくは「補題」)を番う方法もあります！\n"
-"詳細は次のステージで！\n"
+"詳細は次のステージで！\n"
+"\n"
 "ちなみに、`rewrite`より強いTactic`rw`がありますが、\n"
 "それを使わなかった理由はもちろん、ゲーム性を上げるためです。"
 msgstr ""
