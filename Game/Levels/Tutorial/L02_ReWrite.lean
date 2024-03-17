@@ -5,6 +5,7 @@ Level 2
 
 Title "Eq."
 
+namespace MyGame
 /--
 ## 説明
 例えば、`X=Y`という形の仮定や定理`h`があった場合、rw[h]を使用することで、

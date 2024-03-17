@@ -1,4 +1,4 @@
-/--import Mathlib.Lean.Expr.Basic
+import Mathlib.Lean.Expr.Basic
 import Lean.Elab.Tactic.Basic
 import Lean.Elab.Tactic.Rewrite
 
@@ -10,7 +10,7 @@ Modify `rw` to work like `rewrite`.
 This is mainly a copy of the implementation of `rewrite` in Lean core.
 -/
 
-namespace MyNat
+namespace MyGame
 
 open Lean.Meta Lean.Elab.Tactic Lean.Parser.Tactic
 
@@ -19,7 +19,7 @@ open Lean.Meta Lean.Elab.Tactic Lean.Parser.Tactic
 -/
 syntax (name := rewriteSeq) "rw" (config)? rwRuleSeq (location)? : tactic
 
-@[tactic MyNat.rewriteSeq] def evalRewriteSeq : Tactic := fun stx => do
+@[tactic MyGame.rewriteSeq] def evalRewriteSeq : Tactic := fun stx => do
   let cfg ← elabRewriteConfig stx[1]
   let loc   := expandOptLocation stx[3]
   withRWRulesSeq stx[0] stx[2] fun symm term => do
@@ -27,5 +27,3 @@ syntax (name := rewriteSeq) "rw" (config)? rwRuleSeq (location)? : tactic
       (rewriteLocalDecl term symm · cfg)
       (rewriteTarget term symm cfg)
       (throwTacticEx `rewrite · "置き換えられる場所がありません...")
--/
-example : 1=1 := by rfl
