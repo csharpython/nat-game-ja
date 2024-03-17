@@ -40,8 +40,4 @@ syntax (name := rfl) "rfl" : tactic
       | _ => throwTacticEx `rfl mvarId "rflが使える式の形ではありません"
     pure []
 
---example : false↔true := by
---  rfl
---  sorry
-
 end MyGame

@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.6.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sun Mar 17 00:21:31 2024\n"
+"POT-Creation-Date: Sun Mar 17 12:52:26 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -76,16 +76,53 @@ msgid "同じことを表すものってよくありますよね。\n"
 msgstr ""
 
 #: Game.Levels.Tutorial.L02_ReWrite
-msgid "rewrite[h]"
+msgid "rw[h]を使おう。"
+msgstr ""
+
+#: Game.Levels.Tutorial.L02_ReWrite
+msgid "イースターエッグ発見！ #1"
 msgstr ""
 
 #: Game.Levels.Tutorial.L02_ReWrite
 msgid "いいですね！Lean4では、仮定として用意した等式だけでなく、\n"
 "すでに分かったこと、「定理」(もしくは「補題」)を番う方法もあります！\n"
-"詳細は次のステージで！\n"
+"詳細はLv4で！\n"
 "\n"
 "ちなみに、`rewrite`より強いTactic`rw`がありますが、\n"
 "それを使わなかった理由はもちろん、ゲーム性を上げるためです。"
+msgstr ""
+
+#: Game.Levels.Tutorial.L03_etirWeR
+msgid "逆走"
+msgstr ""
+
+#: Game.Levels.Tutorial.L03_etirWeR
+msgid "(Lv2で見つけた人もいるかもしれませんが)\n"
+"実は`h : X=Y`という仮定がある場合、\n"
+"ゴールの`X`を`Y`に置き換えるだけでなく、\n"
+"**`Y`を`X`に置き換えることもできます**\n"
+"早速試してみましょう！\n"
+""
+msgstr ""
+
+#: Game.Levels.Tutorial.L03_etirWeR
+msgid "`rw`のマニュアルは読みましたか？"
+msgstr ""
+
+#: Game.Levels.Tutorial.L03_etirWeR
+msgid "イースターエッグ発見！ #2"
+msgstr ""
+
+#: Game.Levels.Tutorial.L03_etirWeR
+msgid "イースターエッグ発見！ #2"
+msgstr ""
+
+#: Game.Levels.Tutorial.L03_etirWeR
+msgid "このように、数学では\n"
+"「逆から考える」というテクニックが有効なことがあります。\n"
+"ゴールを閉じるために必要なことを考えると、\n"
+"自ずと答えが見えてくるでしょう。\n"
+""
 msgstr ""
 
 #: Game.Levels.Tutorial
@@ -114,6 +151,7 @@ msgstr ""
 msgid "\n"
 "Githubのリンク：https://github.com/csharpython/nat-game-ja\n"
 "使ったテンプレート：https://github.com/hhu-adam/GameSkeleton\n"
+"参考：https://github.com/leanprover-community/NNG4/\n"
 "Lean jaのDiscord：https://discord.com/invite/p32ZfnVawh\n"
 ""
 msgstr ""
