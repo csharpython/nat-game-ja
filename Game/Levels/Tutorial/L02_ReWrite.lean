@@ -34,8 +34,12 @@ Lean4で同じことを表すものを置き換えるときは\"rewrite\"を使�
 "
 
 Statement (e mc:Nat)(h : e = mc ^ 2) : e = mc ^ 2 := by
-  Hint "rewrite[h]"
-  rewrite[h]
+  Hint "rw[h]を使おう。"
+  Branch
+    rw[←h]
+    Hint "これを読む人はどれだけいるのでしょうか。"
+    rfl
+  rw[h]
   rfl
 
 Conclusion "いいですね！Lean4では、仮定として用意した等式だけでなく、
