@@ -1,4 +1,5 @@
 import Game.Metadata
+import Game.Myobj.Mynat.Function
 
 World "Tutorial"
 Level 3
@@ -13,7 +14,7 @@ Introduction"(Lv2で見つけた人もいるかもしれませんが)
 早速試してみましょう！
 "
 
-Statement (x y z:Nat)(h1 : z = x)(h2 : z = y) : x + y = z + z := by
+Statement (x y z:ℕ)(h1 : z = x)(h2 : z = y) : x + y = z + z := by
   Hint (hidden := true) "`rw`のマニュアルは読みましたか？"
   Branch
     rw[h2] at h1

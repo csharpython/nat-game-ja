@@ -1,4 +1,5 @@
 import Game.Metadata
+import Game.Myobj.Mynat.Function
 
 World "Tutorial"
 Level 1
@@ -24,7 +25,7 @@ Introduction "「反射律」って知ってますか？
 たとえば、＝などがそうですね。
 今回のような場合なら、\"rfl\"を使えます！"
 
-Statement (x y:Nat) : 33 * x + 24 * y = 33 * x + 24 * y := by
+Statement (x y:ℕ) : 33 * x + 24 * y = 33 * x + 24 * y := by
   Hint "左辺と右辺が同じ時は、rflを使うとゴールを閉じれます。"
   rfl
 

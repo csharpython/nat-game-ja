@@ -1,4 +1,5 @@
 import Game.Metadata
+import Game.Myobj.Mynat.Function
 
 World "Tutorial"
 Level 2
@@ -33,7 +34,7 @@ Lean4で同じことを表すものを置き換えるときは\"rewrite\"を使�
 こうすることで、「力」と「パワー」が「力」と「力」になるので、rflが使えます！
 "
 
-Statement (e mc:Nat)(h : e = mc ^ 2) : e = mc ^ 2 := by
+Statement (e mc:ℕ)(h : e = mc ^ 2) : e = mc ^ 2 := by
   Hint "rw[h]を使おう。"
   Branch
     rw[←h]
@@ -47,7 +48,6 @@ Conclusion "いいですね！Lean4では、仮定として用意した等式だ
 詳細はLv4で！\n
 ちなみに、`rewrite`より強いTactic`rw`がありますが、
 それを使わなかった理由はもちろん、ゲーム性を上げるためです。"
---rewriteを使えるようにするとrwも使えるようになるそうです。現在修正中
 /- Use these commands to add items to the game's inventory. -/
 
 NewTactic rw
