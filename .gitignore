@@ -1,5 +1,4 @@
 build/
 lake-packages/
 .lake/
-.i18n/
 **/.DS_Store

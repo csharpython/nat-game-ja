@@ -14,6 +14,7 @@ Introduction"(Lv2で見つけた人もいるかもしれませんが)
 早速試してみましょう！
 "
 
+/--$x,y,z$が全て自然数で、$z=x$かつ$z=y$なら$x+y=z+z$。-/
 Statement (x y z:ℕ)(h1 : z = x)(h2 : z = y) : x + y = z + z := by
   Hint (hidden := true) "`rw`のマニュアルは読みましたか？"
   Branch
