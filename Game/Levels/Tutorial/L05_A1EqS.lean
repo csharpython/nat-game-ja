@@ -1,6 +1,6 @@
 import Game.Metadata
-import Game.Myobj.Mynat.Function
-import Game.MyObj.Mynat.Numdef
+import Game.MyObj.MyNat.Function
+import Game.MyObj.MyNat.Numdef
 
 World "Tutorial"
 Level 5

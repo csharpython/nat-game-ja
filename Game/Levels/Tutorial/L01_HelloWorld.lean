@@ -1,5 +1,5 @@
 import Game.Metadata
-import Game.Myobj.Mynat.Function
+import Game.MyObj.MyNat.Function
 
 World "Tutorial"
 Level 1

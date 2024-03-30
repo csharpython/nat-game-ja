@@ -3,6 +3,7 @@ import Game.MyObj.MyNat.MyNat
 
 import Game.MyObj.Tactic.rfl
 import Game.MyObj.Tactic.rw
+import Game.MyObj.Tactic.induction
 
 -- import Mathlib.Tactic.Common
 
