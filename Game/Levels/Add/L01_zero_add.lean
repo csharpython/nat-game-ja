@@ -26,13 +26,13 @@ xを自然数とする。0+x=xである。
 -/
 TheoremDoc MyGame.zero_add as "zero_add" in "+"
 
-/--$x$が自然数なら、$0 + x = x$である。-/
+/--$x∈ℕ,0 + x = x$-/
 Statement zero_add (x:ℕ) : 0 + x = x := by
   Hint "`induction x`"
   induction x
-  rw[zero_eq_0,add_zero]
+  rw[add_zero]
   rfl
-  rw[add_succ,a_ih]
+  rw[add_succ,n_ih]
   rfl
 
 Conclusion "

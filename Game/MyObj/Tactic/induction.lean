@@ -56,7 +56,7 @@ elab (name := MyGame.induction) "induction " tgts:(Parser.Tactic.casesTarget,+)
 
     -- Edit: If `MyGame.rec` is used, we want to use `MyGame.rec'` instead.
     let elimInfo ← match elimInfo.elimExpr.getAppFn.constName? with
-    | some `MyGame.rec =>
+    | some `MyNat.rec =>
       let modifiedUsingArgs : TSyntax Name.anonymous := ⟨
         match usingArg.raw with
         | .node info kind #[] =>
