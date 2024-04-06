@@ -1,7 +1,10 @@
 import Game.Levels.Add.L01_zero_add
+import Game.Levels.Add.L02_succ_add
+import Game.Levels.Add.L03_add_comm
+import Game.Levels.Add.L04_add_assoc
 
 World "Addition"
-Title "Addition world"
+Title "World +"
 
 Introduction "
 このワールドでは、「帰納法」というものを使います。

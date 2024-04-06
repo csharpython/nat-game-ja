@@ -10,14 +10,25 @@ namespace MyGame
 /--
 ## 説明
 数学的帰納法を使うために必要なタクティクです。
+
+## 構文
+`induction X` Xについての帰納法を行います。
+`induction X with Y Z` Xについての帰納法を行い、新たな変数Y、仮定Zを作り使います。
 -/
 TacticDoc induction
 
 Introduction "
 ## あらかじめ言っておきます。
 **このゲームで和の定義として使われているのは
-`a+0=a`と`(a + succ b)=succ (a + b)`のみです。
-`0+a=a`は定義として使われていません。**
+$a+0=a$と$a + b'=(a + b)'$のみです。
+$0+a=a$は定義として使われていません。**
+
+## 数学的帰納法
+A. $n = 0$の時、P。
+B. $n = k$の時にPなら、$n = k'$の時もP。
+この2つが成り立つなら、nがどんな自然数であってもP。
+このことを使う証明を、数学的帰納法といいます。
+**自然数がかかわる問題では、かなり使いやすいです!**
 "
 
 /--
@@ -26,7 +37,7 @@ xを自然数とする。0+x=xである。
 -/
 TheoremDoc MyGame.zero_add as "zero_add" in "+"
 
-/--$x∈ℕ,0 + x = x$-/
+/--$∀x∈ℕ,0 + x = x$-/
 Statement zero_add (x:ℕ) : 0 + x = x := by
   Hint "`induction x`"
   induction x

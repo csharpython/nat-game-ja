@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.6.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sat Mar 30 11:18:17 2024\n"
+"POT-Creation-Date: Sat Apr  6 05:11:06 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -27,6 +27,7 @@ msgstr ""
 #: Game.Levels.Tutorial.L01_HelloWorld
 msgid "\n"
 "# 最初に読むこと。\n"
+"ここには役立つ情報がたくさん書いてあるはずです。\n"
 "\n"
 "このゲームでやるべきことはシンプル。\n"
 "ゴールとして存在する式を証明することです。\n"
@@ -281,15 +282,26 @@ msgstr ""
 
 #: Game.Levels.Add.L01_zero_add
 msgid "## 説明\n"
-"数学的帰納法を使うために必要なタクティクです。"
+"数学的帰納法を使うために必要なタクティクです。\n"
+"\n"
+"## 構文\n"
+"`induction X` Xについての帰納法を行います。\n"
+"`induction X with Y Z` Xについての帰納法を行い、新たな変数Y、仮定Zを作り使います。"
 msgstr ""
 
 #: Game.Levels.Add.L01_zero_add
 msgid "\n"
 "## あらかじめ言っておきます。\n"
 "**このゲームで和の定義として使われているのは\n"
-"`a+0=a`と`(a + succ b)=succ (a + b)`のみです。\n"
-"`0+a=a`は定義として使われていません。**\n"
+"$a+0=a$と$(a + b')=(a + b)'$のみです。\n"
+"$0+a=a$は定義として使われていません。**\n"
+"\n"
+"## 数学的帰納法\n"
+"A. $n = 0$の時、P。\n"
+"B. $n = k$の時にPなら、$n = k'$の時もP。\n"
+"この2つが成り立つなら、nがどんな自然数であってもP。\n"
+"このことを使う証明を、数学的帰納法といいます。\n"
+"**自然数がかかわる問題では、かなり使いやすいです!**\n"
 ""
 msgstr ""
 
@@ -299,7 +311,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Add.L01_zero_add
-msgid "$x$が自然数なら、$0 + x = x$である。"
+msgid "$∀x∈ℕ,0 + x = x$"
 msgstr ""
 
 #: Game.Levels.Add.L01_zero_add
@@ -312,8 +324,115 @@ msgid "\n"
 ""
 msgstr ""
 
+#: Game.Levels.Add.L02_succ_add
+msgid "1+"
+msgstr ""
+
+#: Game.Levels.Add.L02_succ_add
+msgid "\n"
+"これは交換法則を証明するのに必要な奴です。\n"
+"頑張ってください。\n"
+"え、何でこれが必要なのかって？まあ、やってみればわかりますよ...\n"
+""
+msgstr ""
+
+#: Game.Levels.Add.L02_succ_add
+msgid "## 説明\n"
+"x yを自然数とする。x'+y=(x+y)'である。"
+msgstr ""
+
+#: Game.Levels.Add.L02_succ_add
+msgid "$∀{x,y}∈ℕ^2,x' + y = (x + y)'$"
+msgstr ""
+
+#: Game.Levels.Add.L02_succ_add
+msgid "`induction y`"
+msgstr ""
+
+#: Game.Levels.Add.L02_succ_add
+msgid "\n"
+"いいですね！\n"
+""
+msgstr ""
+
+#: Game.Levels.Add.L03_add_comm
+msgid "Boss:交換法則(add_comm)"
+msgstr ""
+
+#: Game.Levels.Add.L03_add_comm
+msgid "\n"
+"[それっぽい音楽]\n"
+"\n"
+"交換法則を証明しましょう！頑張ってください！\n"
+""
+msgstr ""
+
+#: Game.Levels.Add.L03_add_comm
+msgid "## 説明\n"
+"x yを自然数とする。x+y=y+xである。"
+msgstr ""
+
+#: Game.Levels.Add.L03_add_comm
+msgid "$∀{x,y}∈ℕ^2,x + y = y + x$"
+msgstr ""
+
+#: Game.Levels.Add.L03_add_comm
+msgid "どちらを選んでもいいです。とりあえずxについて帰納法しましょうか。"
+msgstr ""
+
+#: Game.Levels.Add.L03_add_comm
+msgid "«{n_ih}» が使えるように、式を変形してみましょう。`succ_add`が使えるはずです。"
+msgstr ""
+
+#: Game.Levels.Add.L03_add_comm
+msgid "\n"
+"お疲れさまでした！このように、整数絡みの問題では帰納法が役立つことが多いです！\n"
+"覚えておきましょう！\n"
+""
+msgstr ""
+
+#: Game.Levels.Add.L04_add_assoc
+msgid "結合法則(add_assoc)"
+msgstr ""
+
+#: Game.Levels.Add.L04_add_assoc
+msgid "\n"
+"$x+y+z$について話しましょう。\n"
+"これは、$(x+y)+z$でしょうか？それとも、$x+(y+z)$でしょうか？\n"
+"正解は、当然$(x+y)+z$です。+は左から計算するからね。\n"
+"では$(x+y)+z$と$x+(y+z)$にはどのような関係があるのでしょうか？\n"
+"それを調べてみましょう。\n"
+""
+msgstr ""
+
+#: Game.Levels.Add.L04_add_assoc
+msgid "## 説明\n"
+"x yを自然数とする。x+y=y+xである。"
+msgstr ""
+
+#: Game.Levels.Add.L04_add_assoc
+msgid "$∀{x,y,z}∈ℕ^3,x + y + z = x + (y + z)$"
+msgstr ""
+
+#: Game.Levels.Add.L04_add_assoc
+msgid "たぶんzに対して帰納法するのが一番楽です。"
+msgstr ""
+
+#: Game.Levels.Add.L04_add_assoc
+msgid "\n"
+"私の回答を載せておきますね：\n"
+"```\n"
+"induction z\n"
+"  repeat rw[add_zero]\n"
+"  rfl\n"
+"  rw[add_succ,add_succ,add_succ,n_ih]\n"
+"  rfl\n"
+"```\n"
+""
+msgstr ""
+
 #: Game.Levels.Add
-msgid "Addition world"
+msgid "World +"
 msgstr ""
 
 #: Game.Levels.Add
