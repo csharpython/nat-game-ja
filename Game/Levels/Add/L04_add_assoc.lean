@@ -35,10 +35,10 @@ Conclusion "
 私の回答を載せておきますね：
 ```
 induction z
-  repeat rw[add_zero]
-  rfl
-  rw[add_succ,add_succ,add_succ,n_ih]
-  rfl
+repeat rw[add_zero]
+rfl
+rw[add_succ,add_succ,add_succ,n_ih]
+rfl
 ```
 "
 

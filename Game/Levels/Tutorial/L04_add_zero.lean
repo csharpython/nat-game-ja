@@ -4,12 +4,11 @@ import Game.MyObj.MyNat.Function
 World "Tutorial"
 Level 4
 
-Title "参照"
+Title "Thm."
 
 namespace MyGame
 Introduction"
 # 定理の使用
-
 Leanで使えるのは、仮定だけではありません。
 すでに分かっていること「定理」も使えます！
 

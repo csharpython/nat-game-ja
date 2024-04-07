@@ -5,7 +5,7 @@ import Game.Levels.Add.L02_succ_add
 World "Addition"
 Level 3
 
-Title "Boss:交換法則(add_comm)"
+Title "Boss:Sym.(add_comm)"
 
 namespace MyGame
 
@@ -17,7 +17,7 @@ Introduction "
 
 /--
 ## 説明
-x yを自然数とする。x+y=y+xである。
+$x,y$を自然数とする。$x+y=y+x$である。
 -/
 TheoremDoc MyGame.add_comm as "add_comm" in "+"
 

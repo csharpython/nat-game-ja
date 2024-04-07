@@ -22,11 +22,12 @@ $a,b$を自然数とする。$a + b' = (a + b)'$ である。
 -/
 TheoremDoc MyGame.add_succ as "add_succ" in "+"
 
+TheoremTab "ℕ"
 /--
 ## 説明
 1は0の次です。
 -/
-TheoremDoc MyGame.one_eq_succ_zero as "one_eq_succ_zero" in "+"
+TheoremDoc MyGame.one_eq_succ_zero as "one_eq_succ_zero" in "ℕ"
 
 /--
 ## 説明

@@ -19,7 +19,7 @@ Introduction"
 ## 説明
 2は1の次です。
 -/
-TheoremDoc MyGame.two_eq_succ_one as "two_eq_succ_one" in "+"
+TheoremDoc MyGame.two_eq_succ_one as "two_eq_succ_one" in "ℕ"
 
 NewTheorem MyGame.two_eq_succ_one
 

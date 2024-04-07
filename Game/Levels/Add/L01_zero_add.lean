@@ -13,7 +13,7 @@ namespace MyGame
 
 ## 構文
 `induction X` Xについての帰納法を行います。
-`induction X with Y Z` Xについての帰納法を行い、新たな変数Y、仮定Zを作り使います。
+`induction X with Y Z` Xについての帰納法を新たな変数Y、仮定Zを使って行います。
 -/
 TacticDoc induction
 
@@ -33,7 +33,7 @@ B. $n = k$の時にPなら、$n = k'$の時もP。
 
 /--
 ## 説明
-xを自然数とする。0+x=xである。
+$x$を自然数とする。$0+x=x$である。
 -/
 TheoremDoc MyGame.zero_add as "zero_add" in "+"
 

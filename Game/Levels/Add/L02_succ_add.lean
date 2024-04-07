@@ -4,7 +4,7 @@ import Game.Levels.Add.L01_zero_add
 World "Addition"
 Level 2
 
-Title "1+"
+Title "Lem."
 
 namespace MyGame
 
@@ -16,7 +16,7 @@ Introduction "
 
 /--
 ## 説明
-x yを自然数とする。x'+y=(x+y)'である。
+$x y$を自然数とする。$x'+y=(x+y)'$である。
 -/
 TheoremDoc MyGame.succ_add as "succ_add" in "+"
 

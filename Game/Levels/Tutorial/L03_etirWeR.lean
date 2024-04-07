@@ -7,7 +7,9 @@ Level 3
 Title "逆走"
 
 namespace MyGame
-Introduction"(Lv2で見つけた人もいるかもしれませんが)
+Introduction"
+## 逆方向の置き換え
+(Lv2で見つけた人もいるかもしれませんが)
 実は`h : X=Y`という仮定がある場合、
 ゴールの`X`を`Y`に置き換えるだけでなく、
 **`Y`を`X`に置き換えることもできます**
