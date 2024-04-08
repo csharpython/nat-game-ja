@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.6.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sun Apr  7 10:20:04 2024\n"
+"POT-Creation-Date: Mon Apr  8 11:58:37 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -356,11 +356,11 @@ msgid "\n"
 ""
 msgstr ""
 
-#: Game.Levels.Add.L03_add_comm
+#: Game.Levels.Add.L03_Add_comm
 msgid "Boss:Sym.(add_comm)"
 msgstr ""
 
-#: Game.Levels.Add.L03_add_comm
+#: Game.Levels.Add.L03_Add_comm
 msgid "\n"
 "[それっぽい音楽]\n"
 "\n"
@@ -368,24 +368,24 @@ msgid "\n"
 ""
 msgstr ""
 
-#: Game.Levels.Add.L03_add_comm
+#: Game.Levels.Add.L03_Add_comm
 msgid "## 説明\n"
 "$x,y$を自然数とする。$x+y=y+x$である。"
 msgstr ""
 
-#: Game.Levels.Add.L03_add_comm
+#: Game.Levels.Add.L03_Add_comm
 msgid "$∀{x,y}∈ℕ^2,x + y = y + x$"
 msgstr ""
 
-#: Game.Levels.Add.L03_add_comm
+#: Game.Levels.Add.L03_Add_comm
 msgid "どちらを選んでもいいです。とりあえずxについて帰納法しましょうか。"
 msgstr ""
 
-#: Game.Levels.Add.L03_add_comm
+#: Game.Levels.Add.L03_Add_comm
 msgid "«{n_ih}» が使えるように、式を変形してみましょう。`succ_add`が使えるはずです。"
 msgstr ""
 
-#: Game.Levels.Add.L03_add_comm
+#: Game.Levels.Add.L03_Add_comm
 msgid "\n"
 "お疲れさまでした！このように、整数絡みの問題では帰納法が役立つことが多いです！\n"
 "覚えておきましょう！\n"
@@ -433,11 +433,14 @@ msgid "\n"
 msgstr ""
 
 #: Game.Levels.Add.L05_add_right_comm
-msgid "add_right_comm"
+msgid "指定(add_right_comm)"
 msgstr ""
 
 #: Game.Levels.Add.L05_add_right_comm
 msgid "さあ、先ほど証明した定理を使ってみましょう。\n"
+"実は、定理はそのまま使うだけではなく、変数を指定して使うこともできます。\n"
+"例えば、`rw[add_comm y]`を`x+(y+z)`に対して使うと、\n"
+"`(y+z)+x`ではなく`x+(z+y)`にできます！\n"
 ""
 msgstr ""
 
@@ -452,13 +455,6 @@ msgstr ""
 
 #: Game.Levels.Add.L05_add_right_comm
 msgid "先ほど証明した結合法則が使えないでしょうか？"
-msgstr ""
-
-#: Game.Levels.Add.L05_add_right_comm
-msgid "\n"
-"実は、定理はそのまま使うだけではなく、変数を指定して使うこともできます。\n"
-"例えば、`rw[add_comm «{y}»]`を`«{x}»+(«{y}»+«{z}»)`に対して使うと、\n"
-"`(«{y}»+«{z}»)+«{x}»`ではなく`«{x}»+(«{z}»+«{y}»)`にできます！"
 msgstr ""
 
 #: Game.Levels.Add.L05_add_right_comm
@@ -491,6 +487,7 @@ msgid "\n"
 "`rw`とはまた違ったゴールの書き換え方を紹介します。\n"
 "これは、「$P$ならば$Q$」のような形の仮定に使えるものです\n"
 "`apply`では、$P$ならば$Q$かつ$P$なら$Q$であるということを使えます！\n"
+"早速使っていきましょう！\n"
 ""
 msgstr ""
 
@@ -518,7 +515,140 @@ msgstr ""
 
 #: Game.Levels.Add.L06_add_right_cancel
 msgid "\n"
-"もう一つの書き換えのやり方はわかりましたか？早速使っていきましょう！\n"
+"もう一つの書き換えのやり方はわかりましたか？\n"
+""
+msgstr ""
+
+#: Game.Levels.Add.L07_add_left_cancel
+msgid "↔"
+msgstr ""
+
+#: Game.Levels.Add.L07_add_left_cancel
+msgid "## 説明\n"
+"ゴールと同じ仮定`t`があるとき、`exact t`でゴールを閉じることができます。"
+msgstr ""
+
+#: Game.Levels.Add.L07_add_left_cancel
+msgid "\n"
+"## 新しいタクティク:`exact`\n"
+"`rfl`とはまた違ったゴールの閉じ方を紹介します。\n"
+"これは、ゴールと同じ仮定があるときに使えるものです。\n"
+"`exact` では、$P$ならば$P$であるということを使えます！\n"
+"早速使っていきましょう！\n"
+""
+msgstr ""
+
+#: Game.Levels.Add.L07_add_left_cancel
+msgid "## 説明\n"
+"$x,y,z$を自然数とする。$n+x=n+y$なら$x=y$である。"
+msgstr ""
+
+#: Game.Levels.Add.L07_add_left_cancel
+msgid "$∀{x,y,n}∈ℕ^3,n + x = n + y → x = y$"
+msgstr ""
+
+#: Game.Levels.Add.L07_add_left_cancel
+msgid "\n"
+"ここでただ`rw[add_comm] at h`を行うと、`x + n`が元に戻るだけです。\n"
+"変数を指定して、`y + n`を交換できるようにしましょう。\n"
+"やり方？W+-5でやったでしょう？"
+msgstr ""
+
+#: Game.Levels.Add.L07_add_left_cancel
+msgid "\n"
+"ここでただ`exact add_right_cancel`とするだけでは、(案の定)うまく行きません。\n"
+"どうやら今回も、変数**と仮定**を指定する必要がありそうです...\n"
+""
+msgstr ""
+
+#: Game.Levels.Add.L07_add_left_cancel
+msgid "\n"
+"もう一つのゴールの閉じ方はわかりましたか？\n"
+""
+msgstr ""
+
+#: Game.Levels.Add.L08_add_right_eq_self
+msgid "標的"
+msgstr ""
+
+#: Game.Levels.Add.L08_add_right_eq_self
+msgid "\n"
+"## rwの変種\n"
+"`nth_rewrite`について紹介しましょう。\n"
+"通常の`rw`は当てはまるものを**全部**置き換えますが、\n"
+"`nth_rewrite x`はx番目だけ置き換えます！\n"
+""
+msgstr ""
+
+#: Game.Levels.Add.L08_add_right_eq_self
+msgid "## 説明\n"
+"$x,y$を自然数とする。$x+y=x$なら$y=0$である。"
+msgstr ""
+
+#: Game.Levels.Add.L08_add_right_eq_self
+msgid "$∀{x,y}∈ℕ^2,x + y = x → y = 0$"
+msgstr ""
+
+#: Game.Levels.Add.L08_add_right_eq_self
+msgid "\n"
+"もう一つのゴールの閉じ方はわかりましたか？\n"
+""
+msgstr ""
+
+#: Game.Levels.Add.L09_add_left_eq_self
+msgid "Cor."
+msgstr ""
+
+#: Game.Levels.Add.L09_add_left_eq_self
+msgid "\n"
+"## rwの変種\n"
+"`nth_rewrite`について紹介しましょう。\n"
+"通常の`rw`は当てはまるものを**全部**置き換えますが、\n"
+"`nth_rewrite x`はx番目だけ置き換えます！\n"
+""
+msgstr ""
+
+#: Game.Levels.Add.L09_add_left_eq_self
+msgid "## 説明\n"
+"$x,y$を自然数とする。$x+y=y$なら$x=0$である。"
+msgstr ""
+
+#: Game.Levels.Add.L09_add_left_eq_self
+msgid "$∀{x,y}∈ℕ^2,x + y = y → x = 0$"
+msgstr ""
+
+#: Game.Levels.Add.L09_add_left_eq_self
+msgid "\n"
+"`apply`と`exact`を使いこなせましたか？さあ、次のレベルで確認してみましょう！\n"
+""
+msgstr ""
+
+#: Game.Levels.Add.Boss_1_ne_2
+msgid "Boss:⊥"
+msgstr ""
+
+#: Game.Levels.Add.Boss_1_ne_2
+msgid "\n"
+"## ⊥\n"
+"数学には、正しいことだけではなく、間違っていることもあります。\n"
+"例えば、$4=5$などです。これが間違っているを証明するにも、\n"
+"`apply`と`exact`を使えます！\n"
+""
+msgstr ""
+
+#: Game.Levels.Add.Boss_1_ne_2
+msgid "## 説明\n"
+"どんな自然数$x$でも$0≠x'$"
+msgstr ""
+
+#: Game.Levels.Add.Boss_1_ne_2
+msgid "$1≠2$"
+msgstr ""
+
+#: Game.Levels.Add.Boss_1_ne_2
+msgid "\n"
+"お疲れさまでした！このワールドで学んだことは数学上の様々なことに生かせます！\n"
+"うまく使っていきましょう！\n"
 ""
 msgstr ""
 
@@ -528,9 +658,11 @@ msgstr ""
 
 #: Game.Levels.Add
 msgid "\n"
-"このワールドでは、「帰納法」というものを使います。\n"
+"このワールドでは、整数や数学で重要な概念\n"
+"「帰納法」「含意」というものを使います。\n"
 "身構える必要はないですよ。\n"
-"これはただの(ドミノが無限にある)(数学的な)ドミノ倒しですから。\n"
+"「帰納法」はただの(ドミノが無限にある)(数学的な)ドミノ倒しですし、\n"
+"「含意」は「AならB」みたいな意外とわかりやすいことですから。\n"
 ""
 msgstr ""
 

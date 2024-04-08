@@ -39,3 +39,4 @@ theorem zero_eq_0 : MyNat.zero = 0 := rfl
 def one : MyNat := MyNat.succ 0
 
 axiom succ_inj (x y:MyNat) : MyNat.succ x = MyNat.succ y → x = y
+axiom zero_ne_succ (x:MyNat) : 0 = MyNat.succ x → False
