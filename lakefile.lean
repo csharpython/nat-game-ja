@@ -2,7 +2,7 @@ import Lake
 open Lake DSL
 
 -- Using this assumes that each dependency has a tag of the form `v4.X.0`.
-def leanVersion : String := s!"v4.6.0"
+def leanVersion : String := s!"v{Lean.versionString}"
 
 def LocalGameServer : Dependency := {
   name := `GameServer
@@ -32,7 +32,7 @@ you can use `require mathlib from git "[URL]" @ leanVersion`
 
 
 
-require mathlib from git "https://github.com/leanprover-community/mathlib4.git" @ "7ca43cbd6aa34058a1afad8e47190af3ec1f9bdb"
+require mathlib from git "https://github.com/leanprover-community/mathlib4.git" @ "a45ae63747140c1b2cbad9d46f518015c047047a"
 
 
 

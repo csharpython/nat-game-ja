@@ -14,6 +14,8 @@ TacticDoc exact
 
 namespace MyGame
 Introduction "
+**警告：このレベルでは`rfl`が無効です。**
+
 ## 新しいタクティク:`exact`
 `rfl`とはまた違ったゴールの閉じ方を紹介します。
 これは、ゴールと同じ仮定があるときに使えるものです。
@@ -27,6 +29,7 @@ $x,y,z$を自然数とする。$n+x=n+y$なら$x=y$である。
 -/
 TheoremDoc MyGame.add_left_cancel as "add_left_cancel" in "+"
 
+DisabledTactic rfl
 /--$∀{x,y,n}∈ℕ^3,n + x = n + y → x = y$-/
 Statement add_left_cancel (x y n:ℕ)(h:n + x = n + y) : x = y := by
   rw[add_comm] at h

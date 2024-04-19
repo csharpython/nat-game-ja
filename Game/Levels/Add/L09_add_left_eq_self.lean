@@ -7,6 +7,7 @@ Title "Cor."
 
 namespace MyGame
 Introduction "
+**警告：このレベルでは`rfl`が無効です。**
 ## 系
 ある定理について、
 そこから簡単に(明らかであるとして証明が省略されるくらいに)証明できる定理です。
@@ -19,6 +20,8 @@ $x,y$を自然数とする。$x+y=y$なら$x=0$である。
 -/
 TheoremDoc MyGame.add_left_eq_self as "add_left_eq_self" in "+"
 
+
+DisabledTactic rfl
 /--$∀{x,y}∈ℕ^2,x + y = y → x = 0$-/
 Statement add_left_eq_self (x y:ℕ)(h:x + y = y) : x = 0 := by
   rw[add_comm] at h

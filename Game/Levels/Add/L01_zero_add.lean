@@ -47,7 +47,7 @@ Statement zero_add (x:ℕ) : 0 + x = x := by
   rfl
 
 Conclusion "
-いいですね！
+いいですね！数学的帰納法を使って、いろいろなことを証明してみましょう！
 "
 
 /- Use these commands to add items to the game's inventory. -/
