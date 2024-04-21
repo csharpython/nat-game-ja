@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Fri Apr 19 12:16:06 2024\n"
+"POT-Creation-Date: Sun Apr 21 11:08:03 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -500,6 +500,7 @@ msgstr ""
 
 #: Game.Levels.Add.L07_add_left_cancel
 msgid "**警告：このレベルでは`rfl`が無効です。**\n"
+"\n"
 "## 新しいタクティク:`exact`\n"
 "`rfl`とはまた違ったゴールの閉じ方を紹介します。\n"
 "これは、ゴールと同じ仮定があるときに使えるものです。\n"
@@ -615,6 +616,74 @@ msgid "このワールドでは、整数や数学で重要な概念\n"
 "身構える必要はないですよ。\n"
 "「帰納法」はただの(ドミノが無限にある)(数学的な)ドミノ倒しですし、\n"
 "「含意」は「AならB」みたいな意外とわかりやすいことですから。"
+msgstr ""
+
+#: Game.Levels.Mul.L01_mul_one
+msgid "等倍(Mul_one)"
+msgstr ""
+
+#: Game.Levels.Mul.L01_mul_one
+msgid "Let's GO!!!"
+msgstr ""
+
+#: Game.Levels.Mul.L01_mul_one
+msgid "## 説明\n"
+"$x$を自然数とする。$x*1=x$である。"
+msgstr ""
+
+#: Game.Levels.Mul.L01_mul_one
+msgid "自然数の乗算。\n"
+"  mul_zero `a * 0 = a` と、\n"
+"  mul_succ `a * MyNat.succ b = a * b + b`\n"
+"  で定義される。"
+msgstr ""
+
+#: Game.Levels.Mul.L01_mul_one
+msgid "## 説明\n"
+"$a$を自然数とする。$a*0=a$である。"
+msgstr ""
+
+#: Game.Levels.Mul.L01_mul_one
+msgid "## 説明\n"
+"$a,b$を自然数とする。$a\\*b'=a*b+a$である。"
+msgstr ""
+
+#: Game.Levels.Mul.L01_mul_one
+msgid "$∀n∈ℕ,n × 1 = n$"
+msgstr ""
+
+#: Game.Levels.Mul.L01_mul_one
+msgid "掛け算も、意外と簡単ですね。"
+msgstr ""
+
+#: Game.Levels.Mul.L02_zero_mul
+msgid "虚無(zero_mul)"
+msgstr ""
+
+#: Game.Levels.Mul.L02_zero_mul
+msgid "Let's GO!!!"
+msgstr ""
+
+#: Game.Levels.Mul.L02_zero_mul
+msgid "## 説明\n"
+"$x$を自然数とする。$0*x=0$である。"
+msgstr ""
+
+#: Game.Levels.Mul.L02_zero_mul
+msgid "$∀n∈ℕ,0 × n = 0$"
+msgstr ""
+
+#: Game.Levels.Mul.L02_zero_mul
+msgid "掛け算も、意外と簡単ですね。"
+msgstr ""
+
+#: Game.Levels.Mul
+msgid "World x"
+msgstr ""
+
+#: Game.Levels.Mul
+msgid "このワールドでは、掛け算についての定理を証明します。\n"
+"World +で使った「帰納法」とやらを活用してみましょう！"
 msgstr ""
 
 #: Game

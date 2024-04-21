@@ -1,5 +1,6 @@
 import Game.Levels.Tutorial
 import Game.Levels.Add
+import Game.Levels.Mul
 
 -- Here's what we'll put on the title screen
 Title "自然数ゲーム"
