@@ -7,6 +7,8 @@ Title "標的"
 
 namespace MyGame
 Introduction "
+**警告：このレベルでは`rfl`が無効です。**
+
 ## rwの変種
 `nth_rewrite`について紹介しましょう。
 通常の`rw`は当てはまるものを**全部**置き換えますが、
@@ -22,10 +24,12 @@ TheoremDoc MyGame.add_right_eq_self as "add_right_eq_self" in "+"
 /--$∀{x,y}∈ℕ^2,x + y = x → y = 0$-/
 Statement add_right_eq_self (x y:ℕ)(h:x + y = x) : y = 0 := by
   nth_rewrite 2 [←add_zero x] at h
-  exact add_left_cancel y 0 x h
+  exact add_left_cancel _ _ _ h
 
 Conclusion "
-もう一つのゴールの閉じ方はわかりましたか？
+実は、`exact add_left_cancel y 0 x h`などのようなコードは、
+一部の変数を`_`で置き換えても動くことがあります。その際、それっぽい変数が自動的に設定されます！
+E.g. `exact add_left_cancel _ _ _ h`
 "
 
 NewHiddenTactic nth_rewrite

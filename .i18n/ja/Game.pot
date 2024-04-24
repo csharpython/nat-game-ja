@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sun Apr 21 11:08:03 2024\n"
+"POT-Creation-Date: Wed Apr 24 06:16:37 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -537,7 +537,9 @@ msgid "標的"
 msgstr ""
 
 #: Game.Levels.Add.L08_add_right_eq_self
-msgid "## rwの変種\n"
+msgid "**警告：このレベルでは`rfl`が無効です。**\n"
+"\n"
+"## rwの変種\n"
 "`nth_rewrite`について紹介しましょう。\n"
 "通常の`rw`は当てはまるものを**全部**置き換えますが、\n"
 "`nth_rewrite x`はx番目だけ置き換えます！"
@@ -553,7 +555,9 @@ msgid "$∀{x,y}∈ℕ^2,x + y = x → y = 0$"
 msgstr ""
 
 #: Game.Levels.Add.L08_add_right_eq_self
-msgid "もう一つのゴールの閉じ方はわかりましたか？"
+msgid "実は、`exact add_left_cancel y 0 x h`などのようなコードは、\n"
+"一部の変数を`_`で置き換えても動くことがあります。その際、それっぽい変数が自動的に設定されます！\n"
+"E.g. `exact add_left_cancel _ _ _ h`"
 msgstr ""
 
 #: Game.Levels.Add.L09_add_left_eq_self
@@ -623,7 +627,11 @@ msgid "等倍(Mul_one)"
 msgstr ""
 
 #: Game.Levels.Mul.L01_mul_one
-msgid "Let's GO!!!"
+msgid "掛け算のチュートリアルです。\n"
+"掛け算は、$n*0=0$と$m*n'=m*n+m$の2つで定義されます。\n"
+"足し算の時と似ていますね。\n"
+"足し算の時と要領はそこまで変わらないはずです。\n"
+"**恐れずにやってみろ！(これ大事)**"
 msgstr ""
 
 #: Game.Levels.Mul.L01_mul_one
@@ -653,6 +661,10 @@ msgid "$∀n∈ℕ,n × 1 = n$"
 msgstr ""
 
 #: Game.Levels.Mul.L01_mul_one
+msgid "1って何だっけ?"
+msgstr ""
+
+#: Game.Levels.Mul.L01_mul_one
 msgid "掛け算も、意外と簡単ですね。"
 msgstr ""
 
@@ -661,7 +673,10 @@ msgid "虚無(zero_mul)"
 msgstr ""
 
 #: Game.Levels.Mul.L02_zero_mul
-msgid "Let's GO!!!"
+msgid "## Leanに確認してもらおう！\n"
+"「うまく行ってると思っていたら、途中でミスに気づいて全部やり直し」\n"
+"みたいなこと、よくありますよね?\n"
+"Leanでは、証明が正しいことのチェックを自動的に行ってくれます！"
 msgstr ""
 
 #: Game.Levels.Mul.L02_zero_mul
@@ -675,6 +690,137 @@ msgstr ""
 
 #: Game.Levels.Mul.L02_zero_mul
 msgid "掛け算も、意外と簡単ですね。"
+msgstr ""
+
+#: Game.Levels.Mul.L03_succ_mul
+msgid "反転(succ_mul)"
+msgstr ""
+
+#: Game.Levels.Mul.L03_succ_mul
+msgid "足し算と要領は変わらないはずです。頑張れ！"
+msgstr ""
+
+#: Game.Levels.Mul.L03_succ_mul
+msgid "## 説明\n"
+"$m,n$を自然数とする。$m'\\*n=m\\*n+n$である。"
+msgstr ""
+
+#: Game.Levels.Mul.L03_succ_mul
+msgid "$∀{n,m}∈ℕ²,m' × n = m ⨯ n + n$"
+msgstr ""
+
+#: Game.Levels.Mul.L03_succ_mul
+msgid "他の定理の証明を振り返ってみることは大切です。意外と形が似ていることが多いです。"
+msgstr ""
+
+#: Game.Levels.Mul.L03_succ_mul
+msgid "`mul_succ`を使って、ゴールをシンプルにしてみましょう。"
+msgstr ""
+
+#: Game.Levels.Mul.L03_succ_mul
+msgid "うまいこと足す順番を入れ替えたら、証明できる気がしませんか？"
+msgstr ""
+
+#: Game.Levels.Mul.L03_succ_mul
+msgid "さて、`mul_comm`の証明に挑みましょう！"
+msgstr ""
+
+#: Game.Levels.Mul.L04_mul_comm
+msgid "交換(mul_comm)"
+msgstr ""
+
+#: Game.Levels.Mul.L04_mul_comm
+msgid "足し算と要領は変わらないはずです。頑張れ！(2回目)"
+msgstr ""
+
+#: Game.Levels.Mul.L04_mul_comm
+msgid "## 説明\n"
+"$m,n$を自然数とする。$m\\*n=n\\*m$である。"
+msgstr ""
+
+#: Game.Levels.Mul.L04_mul_comm
+msgid "$∀{n,m}∈ℕ²,m × n = n ⨯ m$"
+msgstr ""
+
+#: Game.Levels.Mul.L04_mul_comm
+msgid "まだ山場はたくさんあるぞ...!"
+msgstr ""
+
+#: Game.Levels.Mul.L05_one_mul
+msgid "等倍(one_mul)"
+msgstr ""
+
+#: Game.Levels.Mul.L05_one_mul
+msgid "これはいろいろな方法で証明できます!\n"
+"帰納法、交換法則、`succ_mul`...\n"
+"一番楽な方法はなんでしょうか?"
+msgstr ""
+
+#: Game.Levels.Mul.L05_one_mul
+msgid "## 説明\n"
+"$n$を自然数とする。$1\\*n=n$である。"
+msgstr ""
+
+#: Game.Levels.Mul.L05_one_mul
+msgid "$∀n∈ℕ,1 × n = n$"
+msgstr ""
+
+#: Game.Levels.Mul.L05_one_mul
+msgid "たぶんこれが一番早いと思います"
+msgstr ""
+
+#: Game.Levels.Mul.L05_one_mul
+msgid "イースターエッグ発見！ #3"
+msgstr ""
+
+#: Game.Levels.Mul.L05_one_mul
+msgid "いろいろな方法で証明ができるぞ...!"
+msgstr ""
+
+#: Game.Levels.Mul.L06_two_mul
+msgid "倍増(two_mul)"
+msgstr ""
+
+#: Game.Levels.Mul.L06_two_mul
+msgid "何で入れた？？？？"
+msgstr ""
+
+#: Game.Levels.Mul.L06_two_mul
+msgid "## 説明\n"
+"$n$を自然数とする。$2\\*n=n+n$である。"
+msgstr ""
+
+#: Game.Levels.Mul.L06_two_mul
+msgid "$∀n∈ℕ,2 × n = n + n$"
+msgstr ""
+
+#: Game.Levels.Mul.L06_two_mul
+msgid "これ絶対数合わせだよね？？？"
+msgstr ""
+
+#: Game.Levels.Mul.L07_mul_add
+msgid "分散(mul_add)"
+msgstr ""
+
+#: Game.Levels.Mul.L07_mul_add
+msgid "何で入れた？？？？"
+msgstr ""
+
+#: Game.Levels.Mul.L07_mul_add
+msgid "## 説明\n"
+"$a b c$を自然数とする。$a(b+c)=ab+ac$である。"
+msgstr ""
+
+#: Game.Levels.Mul.L07_mul_add
+msgid "$∀{a,b,c}∈ℕ³,a(b+c) = ab + ac$"
+msgstr ""
+
+#: Game.Levels.Mul.L07_mul_add
+msgid "aの帰納法で始めるのだけはやめろ...正直言って、一番面倒だ..."
+msgstr ""
+
+#: Game.Levels.Mul.L07_mul_add
+msgid "これ絶対数合わせだよね？？？"
 msgstr ""
 
 #: Game.Levels.Mul
