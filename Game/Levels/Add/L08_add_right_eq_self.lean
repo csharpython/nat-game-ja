@@ -15,6 +15,7 @@ Introduction "
 `nth_rewrite x`はx番目だけ置き換えます！
 "
 
+DisabledTactic rfl
 /--
 ## 説明
 $x,y$を自然数とする。$x+y=x$なら$y=0$である。

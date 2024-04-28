@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Wed Apr 24 06:16:37 2024\n"
+"POT-Creation-Date: Sun Apr 28 11:30:18 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -803,7 +803,7 @@ msgid "分散(mul_add)"
 msgstr ""
 
 #: Game.Levels.Mul.L07_mul_add
-msgid "何で入れた？？？？"
+msgid "[ボス戦の曲]"
 msgstr ""
 
 #: Game.Levels.Mul.L07_mul_add
@@ -820,7 +820,60 @@ msgid "aの帰納法で始めるのだけはやめろ...正直言って、一番
 msgstr ""
 
 #: Game.Levels.Mul.L07_mul_add
-msgid "これ絶対数合わせだよね？？？"
+msgid "🎉"
+msgstr ""
+
+#: Game.Levels.Mul.L08_add_mul
+msgid "分散 Ⅱ (add_mul)"
+msgstr ""
+
+#: Game.Levels.Mul.L08_add_mul
+msgid "頑張ってください！"
+msgstr ""
+
+#: Game.Levels.Mul.L08_add_mul
+msgid "## 説明\n"
+"$a b c$を自然数とする。$(a+b)c=ac+bc$である。"
+msgstr ""
+
+#: Game.Levels.Mul.L08_add_mul
+msgid "$∀{a,b,c}∈ℕ³,a(b+c) = ab + ac$"
+msgstr ""
+
+#: Game.Levels.Mul.L08_add_mul
+msgid "`rw[mul_comm]`"
+msgstr ""
+
+#: Game.Levels.Mul.L08_add_mul
+msgid "さあ、`mul_assoc`に挑もう...!"
+msgstr ""
+
+#: Game.Levels.Mul.L09_mul_assoc
+msgid "Boss : 結合 (mul_assoc)"
+msgstr ""
+
+#: Game.Levels.Mul.L09_mul_assoc
+msgid "[ボス戦のBGM]"
+msgstr ""
+
+#: Game.Levels.Mul.L09_mul_assoc
+msgid "## 説明\n"
+"$a b c$を自然数とする。$(ab)c=a(bc)$である。"
+msgstr ""
+
+#: Game.Levels.Mul.L09_mul_assoc
+msgid "$∀{a,b,c}∈ℕ³,a(bc) = (ab)c$"
+msgstr ""
+
+#: Game.Levels.Mul.L09_mul_assoc
+msgid "とりあえず帰納法を使いましょう。\n"
+"先ほど証明した`mul_add`を活用できるはずです。\n"
+"今まで証明した定理を振り返るのも大事ですよ。"
+msgstr ""
+
+#: Game.Levels.Mul.L09_mul_assoc
+msgid "おつかれさま～\n"
+"新しいワールド「World ^」に挑んでみて～"
 msgstr ""
 
 #: Game.Levels.Mul
@@ -830,6 +883,57 @@ msgstr ""
 #: Game.Levels.Mul
 msgid "このワールドでは、掛け算についての定理を証明します。\n"
 "World +で使った「帰納法」とやらを活用してみましょう！"
+msgstr ""
+
+#: Game.Levels.Le.L01_zero_le
+msgid "虚無以上(zero_le)"
+msgstr ""
+
+#: Game.Levels.Le.L01_zero_le
+msgid "## $∃$\n"
+"$∃$について説明しましょう。\n"
+"$∃v,P(v)$は$P(v)$を満たす$v$があることを表しています。\n"
+"このような形の命題を証明するときは、条件を満たす具体的な値`w`を見つけ、\n"
+"\n"
+"## `use w`\n"
+"\n"
+"を使えばよいです！"
+msgstr ""
+
+#: Game.Levels.Le.L01_zero_le
+msgid "## 説明\n"
+"$n$を自然数とする。$0≤n$である。"
+msgstr ""
+
+#: Game.Levels.Le.L01_zero_le
+msgid "自然数の大小比較\n"
+"   $a ≤ b ↔ ∃ (c : ℕ), b = a + c$"
+msgstr ""
+
+#: Game.Levels.Le.L01_zero_le
+msgid "## 説明\n"
+"$∃v,P(v)$に対して、`use w`を使うと、ゴールがP(w)に変化します。"
+msgstr ""
+
+#: Game.Levels.Le.L01_zero_le
+msgid "$∀n∈ℕ,0 ≤ n$"
+msgstr ""
+
+#: Game.Levels.Le.L01_zero_le
+msgid "`use n`"
+msgstr ""
+
+#: Game.Levels.Le.L01_zero_le
+msgid "≤も、意外と簡単ですね。"
+msgstr ""
+
+#: Game.Levels.Le
+msgid "World ≤"
+msgstr ""
+
+#: Game.Levels.Le
+msgid "このワールドは、World +で使った「合意」を活用します。\n"
+"頑張ってください!"
 msgstr ""
 
 #: Game
