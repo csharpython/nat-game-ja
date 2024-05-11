@@ -24,11 +24,12 @@ def Lean.MVarId.iffRefl (mvarId : MVarId) : MetaM Unit := do
 
 namespace MyGame
 
-/-- `rfl`の置き換え用のコード。
+/- `rfl`の置き換え用のコード。
 実は
 https://github.com/leanprover-community/NNG4/blob/main/Game/Tactic/Rfl.lean
 のコピペです。 -/
 
+/--等号の左辺と右辺が等しいときに、ゴールを閉じます。-/
 syntax (name := rfl) "rfl" : tactic
 
 @[tactic MyGame.rfl] def evalRfl : Tactic := fun _ =>

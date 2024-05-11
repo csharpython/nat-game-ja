@@ -39,11 +39,8 @@ open Mathlib.Tactic
 open private getElimNameInfo generalizeTargets generalizeVars in evalInduction in
 
 /--
-Modified `induction` tactic for this game.
-
-Usage: `induction n with d hd`.
-
-*(The actual `induction` tactic has a more complex `with`-argument that works differently)*
+このゲームのために変更された `induction` 。
+使用法 `induction n with d hd`.
 -/
 elab (name := MyGame.induction) "induction " tgts:(Parser.Tactic.casesTarget,+)
     usingArg:((" using " ident)?)

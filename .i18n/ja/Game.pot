@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sun Apr 28 11:30:18 2024\n"
+"POT-Creation-Date: Sat May 11 04:22:49 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -172,8 +172,13 @@ msgstr ""
 #: Game.Levels.Tutorial.L04_add_zero
 msgid "自然数の加算。\n"
 "  add_zero `a + 0 = a` と、\n"
-"  add_succ `a + MyNat.succ b = MyNat.succ (a + b)`\n"
+"  add_succ `a + b‘ = (a + b)‘`\n"
 "  で定義される。"
+msgstr ""
+
+#: Game.Levels.Tutorial.L04_add_zero
+msgid "$a‘ = aの次$\n"
+"  直接入力するなら`\\lq`を使おう！"
 msgstr ""
 
 #: Game.Levels.Tutorial.L04_add_zero
@@ -897,7 +902,11 @@ msgid "## $∃$\n"
 "\n"
 "## `use w`\n"
 "\n"
-"を使えばよいです！"
+"を使えばよいです！\n"
+"\n"
+"##≤の意味\n"
+"`a ≤ b`と`∃ (c : ℕ), b = a + c`は同じ意味です。\n"
+"そのため、`use`が使えます！"
 msgstr ""
 
 #: Game.Levels.Le.L01_zero_le
@@ -907,7 +916,7 @@ msgstr ""
 
 #: Game.Levels.Le.L01_zero_le
 msgid "自然数の大小比較\n"
-"   $a ≤ b ↔ ∃ (c : ℕ), b = a + c$"
+"  `a ≤ b ↔ ∃ (c : ℕ), b = a + c`"
 msgstr ""
 
 #: Game.Levels.Le.L01_zero_le

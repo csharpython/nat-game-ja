@@ -10,13 +10,8 @@ This simply calls `use` from Mathlib with no discharger.
 
 open Lean Elab Tactic Mathlib.Tactic
 
-/-- For goals of the form `∃ (n : ℕ), P n` the tactic `use` can be used to provide a `n` which
-will satisfy `P n`. For multiple constructors like `∃ (n m : ℕ), P n`, you can provide
-comma-separated values: `use 2, 3`.
-
-Note that the version for this game is somewhat weaker than the real one. For example,
-`use` in Mathlib
-automatically tries to apply `rfl` afterwards.
+/-- `∃ (n : ℕ), P n`のようなゴールに対し、`P n`を満たす`x`があるなら、
+`use x`を使うことでゴールが`P x`になります。
 -/
 -- @[inherit_doc Mathlib.Tactic.useSyntax]
 elab (name := MyGame.useSyntax) "use" ppSpace args:term,+ : tactic => do

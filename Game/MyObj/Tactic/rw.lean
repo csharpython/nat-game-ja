@@ -15,7 +15,7 @@ namespace MyGame
 open Lean.Meta Lean.Elab.Tactic Lean.Parser.Tactic
 
 /--
-`rw`を`rewrite`に変換する装置。
+等号を用いて、ゴールを書き換えます。
 -/
 syntax (name := rewriteSeq) "rw" (config)? rwRuleSeq (location)? : tactic
 

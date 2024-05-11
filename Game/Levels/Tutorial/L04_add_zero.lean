@@ -21,12 +21,18 @@ TheoremTab "+"
 /--
   自然数の加算。
   add_zero `a + 0 = a` と、
-  add_succ `a + MyNat.succ b = MyNat.succ (a + b)`
+  add_succ `a + b‘ = (a + b)‘`
   で定義される。
 -/
 DefinitionDoc MyGame.add as "+"
 
-NewDefinition MyGame.add
+/--
+  $a‘ = aの次$
+  直接入力するなら`\lq`を使おう！
+-/
+DefinitionDoc MyGame.MyNat.succ as "‘"
+
+NewDefinition MyGame.add MyGame.MyNat.succ
 
 NewHiddenTactic «repeat»
 

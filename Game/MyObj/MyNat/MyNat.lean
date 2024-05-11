@@ -9,6 +9,7 @@ inductive MyNat where
 @[inherit_doc]
 notation (name := MyNatNotation) (priority := 1000000) "ℕ" => MyNat
 -- Note: as long as we do not import `Mathlib.Init.Data.Nat.Notation` this is fine.
+notation:300 a:300 "‘" => MyNat.succ a
 
 namespace MyGame
 
@@ -19,13 +20,13 @@ instance : Inhabited MyNat where
 def ofNat (x : Nat) : MyNat :=
   match x with
   | Nat.zero   => MyNat.zero
-  | Nat.succ b => MyNat.succ (ofNat b)
+  | Nat.succ b => (ofNat b)‘
 
 @[MyNat_decide]
 def toNat (x : MyNat) : Nat :=
   match x with
   | MyNat.zero   => Nat.zero
-  | MyNat.succ b => Nat.succ (toNat b)
+  | b‘ => Nat.succ (toNat b)
 
 instance instofNat {n : Nat} : OfNat MyNat n where
   ofNat := ofNat n
@@ -36,7 +37,7 @@ instance : ToString MyNat where
 @[MyNat_decide]
 theorem zero_eq_0 : MyNat.zero = 0 := rfl
 
-def one : MyNat := MyNat.succ 0
+def one : MyNat := 0‘
 
-axiom succ_inj (x y:MyNat) : MyNat.succ x = MyNat.succ y → x = y
-axiom zero_ne_succ (x:MyNat) : 0 = MyNat.succ x → False
+axiom succ_inj (x y:MyNat) : x‘ = y‘ → x = y
+axiom zero_ne_succ (x:MyNat) : 0 = x‘ → False
