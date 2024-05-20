@@ -27,7 +27,7 @@ $a$を自然数とする。$a≤0$なら$a=0$である。
 -/
 TheoremDoc MyGame.le_zero as "le_zero" in "≤"
 
-/--$∀a∈ℕ,a ≤ 0 → a = 1$-/
+/--$∀a∈ℕ,a ≤ 0 → a = 0$-/
 Statement le_zero (a:ℕ)(h : a ≤ 0) : a = 0 := by
   Hint "まずは∃のcasesから始めよう"
   cases h
@@ -36,9 +36,7 @@ Statement le_zero (a:ℕ)(h : a ≤ 0) : a = 0 := by
   rfl
   Hint (hidden := true) "Falseを導くためには...?"
   rw[succ_add] at h_1
-  apply zero_ne_succ at h_1
-  apply False.elim
-  exact h_1
+  exact False.elim (zero_ne_succ _ h_1)
 Conclusion "
 おつかれ！
 "
