@@ -34,6 +34,12 @@ DefinitionDoc MyGame.MyNat.succ as "‘"
 
 NewDefinition MyGame.add MyGame.MyNat.succ
 
+/--
+## 説明
+`repeat tactic`とすることで、`tactic`を失敗するまで繰り返します。
+-/
+TacticDoc «repeat»
+
 NewHiddenTactic «repeat»
 
 /--

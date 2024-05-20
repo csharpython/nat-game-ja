@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sat May 11 04:22:49 2024\n"
+"POT-Creation-Date: Mon May 20 12:20:45 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -179,6 +179,11 @@ msgstr ""
 #: Game.Levels.Tutorial.L04_add_zero
 msgid "$a‘ = aの次$\n"
 "  直接入力するなら`\\lq`を使おう！"
+msgstr ""
+
+#: Game.Levels.Tutorial.L04_add_zero
+msgid "## 説明\n"
+"`repeat tactic`とすることで、`tactic`を失敗するまで繰り返します。"
 msgstr ""
 
 #: Game.Levels.Tutorial.L04_add_zero
@@ -565,6 +570,11 @@ msgid "実は、`exact add_left_cancel y 0 x h`などのようなコードは、
 "E.g. `exact add_left_cancel _ _ _ h`"
 msgstr ""
 
+#: Game.Levels.Add.L08_add_right_eq_self
+msgid "## 説明\n"
+"Why can you see this message?"
+msgstr ""
+
 #: Game.Levels.Add.L09_add_left_eq_self
 msgid "Cor."
 msgstr ""
@@ -647,7 +657,7 @@ msgstr ""
 #: Game.Levels.Mul.L01_mul_one
 msgid "自然数の乗算。\n"
 "  mul_zero `a * 0 = a` と、\n"
-"  mul_succ `a * MyNat.succ b = a * b + b`\n"
+"  mul_succ `a * b‘ = a * b + b`\n"
 "  で定義される。"
 msgstr ""
 
@@ -934,6 +944,132 @@ msgstr ""
 
 #: Game.Levels.Le.L01_zero_le
 msgid "≤も、意外と簡単ですね。"
+msgstr ""
+
+#: Game.Levels.Le.L02_le_rfl
+msgid "それはそれ以上(le_rfl)"
+msgstr ""
+
+#: Game.Levels.Le.L02_le_rfl
+msgid "「以上」って、(数学ではもちろん$≥$ですが)\n"
+"$>$として使われることも$≥$として使われることもありますよね。\n"
+"なんでなんでしょうか。"
+msgstr ""
+
+#: Game.Levels.Le.L02_le_rfl
+msgid "## 説明\n"
+"$n$を自然数とする。$n≤n$である。"
+msgstr ""
+
+#: Game.Levels.Le.L02_le_rfl
+msgid "$∀n∈ℕ,n ≤ n$"
+msgstr ""
+
+#: Game.Levels.Le.L02_le_rfl
+msgid "add_zero"
+msgstr ""
+
+#: Game.Levels.Le.L02_le_rfl
+msgid "誰かわかる人、教えてください"
+msgstr ""
+
+#: Game.Levels.Le.L03_le_succ
+msgid "一歩ずつ前へ(le_succ)"
+msgstr ""
+
+#: Game.Levels.Le.L03_le_succ
+msgid "一歩ずつ前へ、進んでいきましょう。\n"
+"「千里の道も一歩から」です。"
+msgstr ""
+
+#: Game.Levels.Le.L03_le_succ
+msgid "## 説明\n"
+"$n$を自然数とする。$n≤n‘$である。"
+msgstr ""
+
+#: Game.Levels.Le.L03_le_succ
+msgid "$∀n∈ℕ,n ≤ n‘$"
+msgstr ""
+
+#: Game.Levels.Le.L03_le_succ
+msgid "add_one_eq_succ"
+msgstr ""
+
+#: Game.Levels.Le.L03_le_succ
+msgid "誰かわかる人、教えてください"
+msgstr ""
+
+#: Game.Levels.Le.L04_le_trans
+msgid "つながる　つなげる(le_trans)"
+msgstr ""
+
+#: Game.Levels.Le.L04_le_trans
+msgid "想いはきっと、未来へつながる。\n"
+"## `cases`\n"
+"新しいtactic `cases`が利用可能になりました。\n"
+"このtacticは、∃を含む仮定に対して効果的です。(他にも何か?)"
+msgstr ""
+
+#: Game.Levels.Le.L04_le_trans
+msgid "## 使用法1 : 0 or not\n"
+"`n : ℕ` があるときにゴール`P n`に対して`cases n with d`を使うと、ゴールが`P 0`と`P (d‘)`になる。\n"
+"\n"
+"## 使用法2 : 場合分け\n"
+"`h : P ∨ Q`があるときに`cases h with h1 h2`を使うと、`P`である場合のゴールと`Q`である場合のゴールが作られる。`h`は消える。\n"
+"\n"
+"## 使用法3 : ≤\n"
+"`h : a ≤ b`があるときに`cases h with c hc`を使うと、`h`が`hc : b = a + c`に変化する。"
+msgstr ""
+
+#: Game.Levels.Le.L04_le_trans
+msgid "## 説明\n"
+"$a,b,c$を自然数とする。$a≤b∧b≤c$なら$a≤c$である。"
+msgstr ""
+
+#: Game.Levels.Le.L04_le_trans
+msgid "$∀{a,b,c}∈ℕ³,a ≤ b∧b ≤ c → a ≤ c$"
+msgstr ""
+
+#: Game.Levels.Le.L04_le_trans
+msgid "誰かわかる人、教えてください"
+msgstr ""
+
+#: Game.Levels.Le.L05_le_zero
+msgid "Boss:虚像(le_zero)"
+msgstr ""
+
+#: Game.Levels.Le.L05_le_zero
+msgid "Try It!"
+msgstr ""
+
+#: Game.Levels.Le.L05_le_zero
+msgid "## 説明\n"
+"偽を仮定すれば、全ての命題が真である。"
+msgstr ""
+
+#: Game.Levels.Le.L05_le_zero
+msgid "## 説明\n"
+"$a$を自然数とする。$a≤0$なら$a=0$である。"
+msgstr ""
+
+#: Game.Levels.Le.L05_le_zero
+msgid "$∀a∈ℕ,a ≤ 0 → a = 1$"
+msgstr ""
+
+#: Game.Levels.Le.L05_le_zero
+msgid "まずは∃のcasesから始めよう"
+msgstr ""
+
+#: Game.Levels.Le.L05_le_zero
+msgid "次に自然数のcasesをしよう"
+msgstr ""
+
+#: Game.Levels.Le.L05_le_zero
+msgid "Falseを導くためには...?"
+msgstr ""
+
+#: Game.Levels.Le.L05_le_zero
+msgid "おつかれ！"
 msgstr ""
 
 #: Game.Levels.Le

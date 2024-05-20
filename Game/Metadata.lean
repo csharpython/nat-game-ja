@@ -5,6 +5,7 @@ import Game.MyObj.Tactic.rfl
 import Game.MyObj.Tactic.rw
 import Game.MyObj.Tactic.induction
 import Game.MyObj.Tactic.use
+import Game.MyObj.Tactic.cases
 import Mathlib.Tactic.ApplyAt
 import Mathlib.Tactic.NthRewrite
 

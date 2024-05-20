@@ -33,6 +33,12 @@ Conclusion "
 E.g. `exact add_left_cancel _ _ _ h`
 "
 
+/--
+## 説明
+Why can you see this message?
+-/
+TacticDoc nth_rewrite
+
 NewHiddenTactic nth_rewrite
 /- Use these commands to add items to the game's inventory. -/
 
