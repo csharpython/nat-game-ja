@@ -18,7 +18,7 @@ TheoremTab "*"
 
 /--
 ## 説明
-$a b c$を自然数とする。$(ab)c=a(bc)$である。
+$a,b,c$を自然数とする。$(ab)c=a(bc)$である。
 -/
 TheoremDoc MyGame.mul_assoc as "mul_assoc" in "*"
 

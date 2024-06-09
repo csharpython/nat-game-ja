@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Mon May 20 12:20:45 2024\n"
+"POT-Creation-Date: Sun Jun  9 11:27:14 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -436,7 +436,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Add.L05_add_right_comm
-msgid "$∀{x,y,z}∈ℕ^3,x + y + z = x + (y + z)$"
+msgid "$∀{x,y,z}∈ℕ^3,x + y + z = x + z + y$"
 msgstr ""
 
 #: Game.Levels.Add.L05_add_right_comm
@@ -823,7 +823,7 @@ msgstr ""
 
 #: Game.Levels.Mul.L07_mul_add
 msgid "## 説明\n"
-"$a b c$を自然数とする。$a(b+c)=ab+ac$である。"
+"$a,b,c$を自然数とする。$a(b+c)=ab+ac$である。"
 msgstr ""
 
 #: Game.Levels.Mul.L07_mul_add
@@ -848,7 +848,7 @@ msgstr ""
 
 #: Game.Levels.Mul.L08_add_mul
 msgid "## 説明\n"
-"$a b c$を自然数とする。$(a+b)c=ac+bc$である。"
+"$a,b,c$を自然数とする。$(a+b)c=ac+bc$である。"
 msgstr ""
 
 #: Game.Levels.Mul.L08_add_mul
@@ -873,7 +873,7 @@ msgstr ""
 
 #: Game.Levels.Mul.L09_mul_assoc
 msgid "## 説明\n"
-"$a b c$を自然数とする。$(ab)c=a(bc)$である。"
+"$a,b,c$を自然数とする。$(ab)c=a(bc)$である。"
 msgstr ""
 
 #: Game.Levels.Mul.L09_mul_assoc
@@ -996,7 +996,7 @@ msgid "add_one_eq_succ"
 msgstr ""
 
 #: Game.Levels.Le.L03_le_succ
-msgid "誰かわかる人、教えてください"
+msgid "使える定理を振り返ることはいつでも大事ですよ！"
 msgstr ""
 
 #: Game.Levels.Le.L04_le_trans
@@ -1031,7 +1031,7 @@ msgid "$∀{a,b,c}∈ℕ³,a ≤ b∧b ≤ c → a ≤ c$"
 msgstr ""
 
 #: Game.Levels.Le.L04_le_trans
-msgid "誰かわかる人、教えてください"
+msgid "不等号の世界へようこそ"
 msgstr ""
 
 #: Game.Levels.Le.L05_le_zero
@@ -1053,7 +1053,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Le.L05_le_zero
-msgid "$∀a∈ℕ,a ≤ 0 → a = 1$"
+msgid "$∀a∈ℕ,a ≤ 0 → a = 0$"
 msgstr ""
 
 #: Game.Levels.Le.L05_le_zero
@@ -1070,6 +1070,112 @@ msgstr ""
 
 #: Game.Levels.Le.L05_le_zero
 msgid "おつかれ！"
+msgstr ""
+
+#: Game.Levels.le.L06_le_symm
+msgid "双鏡(le_symm)"
+msgstr ""
+
+#: Game.Levels.le.L06_le_symm
+msgid "Try It!"
+msgstr ""
+
+#: Game.Levels.le.L06_le_symm
+msgid "## 説明\n"
+"$a,b$を自然数とする。$a≤b$かつ$b≤a$なら$a=b$である。"
+msgstr ""
+
+#: Game.Levels.le.L06_le_symm
+msgid "$∀\\{a,b\\}∈ℕ²,a ≤ b ∧ b ≤ a → a = b$"
+msgstr ""
+
+#: Game.Levels.le.L06_le_symm
+msgid "仮定で不等号は即`cases`!"
+msgstr ""
+
+#: Game.Levels.le.L06_le_symm
+msgid "`a = a + w + w_1`"
+msgstr ""
+
+#: Game.Levels.le.L06_le_symm
+msgid "`0 = «{w}»`を示しましょう。`cases «{w}»`でどうぞ。"
+msgstr ""
+
+#: Game.Levels.le.L06_le_symm
+msgid "おつかれ！"
+msgstr ""
+
+#: Game.Levels.Le.L07_or_cases
+msgid "論理和"
+msgstr ""
+
+#: Game.Levels.Le.L07_or_cases
+msgid "**exact無効**\n"
+"\n"
+"`cases`が使える命題をもう一つ紹介します。\n"
+"`P ∨ Q`にたいし`cases`を使うと、\n"
+"`P`の場合のゴールと\n"
+"`Q`の場合のゴールが生成されます！"
+msgstr ""
+
+#: Game.Levels.Le.L07_or_cases
+msgid "## 説明\n"
+"$P$とする。$P∨Q$である。"
+msgstr ""
+
+#: Game.Levels.Le.L07_or_cases
+msgid "## 説明\n"
+"$Q$とする。$P∨Q$である。"
+msgstr ""
+
+#: Game.Levels.Le.L07_or_cases
+msgid "$∀a∈ℕ,(a = 50 ∨ a = 73) → (a = 73 ∨ a = 50)$"
+msgstr ""
+
+#: Game.Levels.Le.L07_or_cases
+msgid "そうですね、`cases h`です"
+msgstr ""
+
+#: Game.Levels.Le.L07_or_cases
+msgid "このレベルは非常に簡単です。\n"
+"つまり、**この次のレベルがめちゃくちゃ難しい**ってこと！"
+msgstr ""
+
+#: Game.Levels.Le.L08_le_total
+msgid "補完(Le_total)"
+msgstr ""
+
+#: Game.Levels.Le.L08_le_total
+msgid "`cases`をフル活用してみましょう！"
+msgstr ""
+
+#: Game.Levels.Le.L08_le_total
+msgid "## 説明\n"
+"$a,b$を自然数とする。`a≤b`か`b‘≤a`である。"
+msgstr ""
+
+#: Game.Levels.Le.L08_le_total
+msgid "$∀\\{a,b\\}∈ℕ²,a≤b∨b‘≤a$"
+msgstr ""
+
+#: Game.Levels.Le.L08_le_total
+msgid "まずは`induction a`！"
+msgstr ""
+
+#: Game.Levels.Le.L08_le_total
+msgid "つぎに∨のcases！"
+msgstr ""
+
+#: Game.Levels.Le.L08_le_total
+msgid "さらに≤のcases！"
+msgstr ""
+
+#: Game.Levels.Le.L08_le_total
+msgid "ついでに`«{w}»`もcases！"
+msgstr ""
+
+#: Game.Levels.Le.L08_le_total
+msgid "無事に`cases`を使いこなせましたね！"
 msgstr ""
 
 #: Game.Levels.Le

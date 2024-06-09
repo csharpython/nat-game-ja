@@ -31,7 +31,7 @@ Statement le_succ (n:ℕ) : n ≤ n‘ := by
   rw[add_one_eq_succ]
   rfl
 Conclusion "
-誰かわかる人、教えてください
+使える定理を振り返ることはいつでも大事ですよ！
 "
 /- Use these commands to add items to the game's inventory. -/
 

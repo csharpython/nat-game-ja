@@ -16,7 +16,7 @@ TheoremTab "*"
 
 /--
 ## 説明
-$a b c$を自然数とする。$a(b+c)=ab+ac$である。
+$a,b,c$を自然数とする。$a(b+c)=ab+ac$である。
 -/
 TheoremDoc MyGame.mul_add as "mul_add" in "*"
 

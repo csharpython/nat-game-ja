@@ -17,7 +17,7 @@ TheoremTab "*"
 
 /--
 ## 説明
-$a b c$を自然数とする。$(a+b)c=ac+bc$である。
+$a,b,c$を自然数とする。$(a+b)c=ac+bc$である。
 -/
 TheoremDoc MyGame.add_mul as "add_mul" in "*"
 

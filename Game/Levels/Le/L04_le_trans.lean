@@ -49,7 +49,7 @@ Statement le_trans (a b c:ℕ)(h1 : a ≤ b)(h2 : b ≤ c) : a ≤ c := by
   rfl
 
 Conclusion "
-誰かわかる人、教えてください
+不等号の世界へようこそ
 "
 /- Use these commands to add items to the game's inventory. -/
 
