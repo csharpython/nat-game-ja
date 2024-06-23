@@ -5,7 +5,7 @@ import Game.Levels.Mul.L04_mul_comm
 World "Multiplication"
 Level 5
 
-Title "等倍(one_mul)"
+Title "不変(one_mul)"
 
 namespace MyGame
 

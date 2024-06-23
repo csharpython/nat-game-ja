@@ -1,6 +1,7 @@
 import Game.Levels.Tutorial
 import Game.Levels.Add
 import Game.Levels.Mul
+import Game.Levels.Pow
 import Game.Levels.Le
 
 -- Here's what we'll put on the title screen

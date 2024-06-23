@@ -27,8 +27,8 @@ TheoremDoc MyGame.mul_one as "mul_one" in "*"
 
 /--
   自然数の乗算。
-  mul_zero `a * 0 = a` と、
-  mul_succ `a * b‘ = a * b + b`
+  mul_zero `a * 0 = 0` と、
+  mul_succ `a * b‘ = a * b + a`
   で定義される。
 -/
 DefinitionDoc MyGame.mul as "*"

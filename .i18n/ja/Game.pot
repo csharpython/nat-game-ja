@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sun Jun  9 11:27:14 2024\n"
+"POT-Creation-Date: Sun Jun 23 09:27:51 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -656,8 +656,8 @@ msgstr ""
 
 #: Game.Levels.Mul.L01_mul_one
 msgid "自然数の乗算。\n"
-"  mul_zero `a * 0 = a` と、\n"
-"  mul_succ `a * b‘ = a * b + b`\n"
+"  mul_zero `a * 0 = 0` と、\n"
+"  mul_succ `a * b‘ = a * b + a`\n"
 "  で定義される。"
 msgstr ""
 
@@ -762,7 +762,7 @@ msgid "まだ山場はたくさんあるぞ...!"
 msgstr ""
 
 #: Game.Levels.Mul.L05_one_mul
-msgid "等倍(one_mul)"
+msgid "不変(one_mul)"
 msgstr ""
 
 #: Game.Levels.Mul.L05_one_mul
@@ -898,6 +898,155 @@ msgstr ""
 #: Game.Levels.Mul
 msgid "このワールドでは、掛け算についての定理を証明します。\n"
 "World +で使った「帰納法」とやらを活用してみましょう！"
+msgstr ""
+
+#: Game.Levels.Pow.L01_pow_one
+msgid "Re:等倍(pow_one)"
+msgstr ""
+
+#: Game.Levels.Pow.L01_pow_one
+msgid "累乗のチュートリアルです。\n"
+"累乗は、$n^0=1$と$m^n'=m^n*m$の2つで定義されます。\n"
+"掛け算の時と似ていますね。\n"
+"掛け算の時と要領はそこまで変わらないはずです。\n"
+"**恐れずにやってみろ！(これ大事)**"
+msgstr ""
+
+#: Game.Levels.Pow.L01_pow_one
+msgid "## 説明\n"
+"$x$を自然数とする。$x^1=x$である。"
+msgstr ""
+
+#: Game.Levels.Pow.L01_pow_one
+msgid "自然数の累乗。\n"
+"  pow_zero `a ^ 0 = 1` と、\n"
+"  pow_succ `a ^ b‘ = a ^ b * a`\n"
+"  で定義される。"
+msgstr ""
+
+#: Game.Levels.Pow.L01_pow_one
+msgid "## 説明\n"
+"$a$を自然数とする。$a^0=1$である。"
+msgstr ""
+
+#: Game.Levels.Pow.L01_pow_one
+msgid "## 説明\n"
+"$a,b$を自然数とする。$a^b'=a^b\\*a$である。"
+msgstr ""
+
+#: Game.Levels.Pow.L01_pow_one
+msgid "$x∈ℕ→x^1=1$"
+msgstr ""
+
+#: Game.Levels.Pow.L01_pow_one
+msgid "累乗も、意外と簡単ですね。。"
+msgstr ""
+
+#: Game.Levels.Pow.L02_zero_pow
+msgid "Re:虚無(zero_pow)"
+msgstr ""
+
+#: Game.Levels.Pow.L02_zero_pow
+msgid "## Leanに確認してもらおう！\n"
+"「うまく行ってると思っていたら、途中でミスに気づいて全部やり直し」\n"
+"みたいなこと、よくありますよね?\n"
+"Leanでは、証明が正しいことのチェックを自動的に行ってくれます！\n"
+"...あれ？何か既視感がある..."
+msgstr ""
+
+#: Game.Levels.Pow.L02_zero_pow
+msgid "## 説明\n"
+"$x$を自然数とする。$0^(x‘) = 0$である。"
+msgstr ""
+
+#: Game.Levels.Pow.L02_zero_pow
+msgid "$x∈ℕ→0^x'=0$"
+msgstr ""
+
+#: Game.Levels.Pow.L02_zero_pow
+msgid "ちなみに、$0^0=1$です。このゲームの中では..."
+msgstr ""
+
+#: Game.Levels.Pow.L03_one_pow
+msgid "Re:不変(one_pow)"
+msgstr ""
+
+#: Game.Levels.Pow.L03_one_pow
+msgid "掛け算と要領は変わらないはずです。頑張れ！"
+msgstr ""
+
+#: Game.Levels.Pow.L03_one_pow
+msgid "## 説明\n"
+"$x$を自然数とする。$1^x=1$である。"
+msgstr ""
+
+#: Game.Levels.Pow.L03_one_pow
+msgid "$x∈ℕ→1^x=1$"
+msgstr ""
+
+#: Game.Levels.Pow.L03_one_pow
+msgid "普段と変わらない日常も好きです。by 作者"
+msgstr ""
+
+#: Game.Levels.Pow.L04_pow_add
+msgid "対数(pow_add)"
+msgstr ""
+
+#: Game.Levels.Pow.L04_pow_add
+msgid "対数って、大きな数を表すとき便利ですよね。\n"
+"実は身近なところでも使われています(?)。\n"
+"「浮動小数点型」で調べてみるといいですよ。"
+msgstr ""
+
+#: Game.Levels.Pow.L04_pow_add
+msgid "## 説明\n"
+"$x$を自然数とする。$x^(a+b)=x^a*x^b$である。"
+msgstr ""
+
+#: Game.Levels.Pow.L04_pow_add
+msgid "${x,a,b}∈ℕ³→x^(a+b)=x^a*x^b$"
+msgstr ""
+
+#: Game.Levels.Pow.L04_pow_add
+msgid "まあ、`induction b`ですね。"
+msgstr ""
+
+#: Game.Levels.Pow.L04_pow_add
+msgid "私は競プロ勢なので、double型はあまり使いません　by 作者"
+msgstr ""
+
+#: Game.Levels.Pow.L05_mul_pow
+msgid "上底(mul_pow)"
+msgstr ""
+
+#: Game.Levels.Pow.L05_mul_pow
+msgid "Try it!"
+msgstr ""
+
+#: Game.Levels.Pow.L05_mul_pow
+msgid "## 説明\n"
+"$x$を自然数とする。$(ab)^x=a^x*b^x$である。"
+msgstr ""
+
+#: Game.Levels.Pow.L05_mul_pow
+msgid "${x,a,b}∈ℕ³→(ab)^x=a^x*b^x$"
+msgstr ""
+
+#: Game.Levels.Pow.L05_mul_pow
+msgid "`mul_comm`を使うとき、その後ろに何かしらを指定する必要があります。"
+msgstr ""
+
+#: Game.Levels.Pow.L05_mul_pow
+msgid "Nice try!"
+msgstr ""
+
+#: Game.Levels.Pow
+msgid "World ^"
+msgstr ""
+
+#: Game.Levels.Pow
+msgid "このワールドでは、累乗についての定理を証明します。\n"
+"World xがさらに難しく(?)なりました！"
 msgstr ""
 
 #: Game.Levels.Le.L01_zero_le
