@@ -20,7 +20,7 @@ $m,n$を自然数とする。$m\*n=n\*m$である。
 -/
 TheoremDoc MyGame.mul_comm as "mul_comm" in "*"
 
-/--$∀{n,m}∈ℕ²,m × n = n ⨯ m$-/
+/--$∀\{n,m\}∈ℕ²,m × n = n ⨯ m$-/
 Statement mul_comm (m n:ℕ) : m * n = n * m := by
   induction n
   rw[mul_zero,zero_mul]

@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sun Jun 23 09:27:51 2024\n"
+"POT-Creation-Date: Fri Jul  5 12:24:22 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -192,7 +192,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Tutorial.L04_add_zero
-msgid "$∀{a,b,c}∈ℕ^3,a + (b + 0) + (c + 0) = a + b + c$"
+msgid "$∀\\{a,b,c\\}∈ℕ^3,a + (b + 0) + (c + 0) = a + b + c$"
 msgstr ""
 
 #: Game.Levels.Tutorial.L04_add_zero
@@ -339,7 +339,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Add.L02_succ_add
-msgid "$∀{x,y}∈ℕ^2,x' + y = (x + y)'$"
+msgid "$∀\\{x,y\\}∈ℕ^2,x' + y = (x + y)'$"
 msgstr ""
 
 #: Game.Levels.Add.L02_succ_add
@@ -367,7 +367,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Add.L03_Add_comm
-msgid "$∀{x,y}∈ℕ^2,x + y = y + x$"
+msgid "$∀\\{x,y\\}∈ℕ^2,x + y = y + x$"
 msgstr ""
 
 #: Game.Levels.Add.L03_Add_comm
@@ -401,7 +401,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Add.L04_add_assoc
-msgid "$∀{x,y,z}∈ℕ^3,x + y + z = x + (y + z)$"
+msgid "$∀\\{x,y,z\\}∈ℕ^3,x + y + z = x + (y + z)$"
 msgstr ""
 
 #: Game.Levels.Add.L04_add_assoc
@@ -436,7 +436,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Add.L05_add_right_comm
-msgid "$∀{x,y,z}∈ℕ^3,x + y + z = x + z + y$"
+msgid "$∀\\{x,y,z\\}∈ℕ^3,x + y + z = x + z + y$"
 msgstr ""
 
 #: Game.Levels.Add.L05_add_right_comm
@@ -484,7 +484,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Add.L06_add_right_cancel
-msgid "$∀{x,y,n}∈ℕ^3,x + n = y + n → x = y$"
+msgid "$∀\\{x,y,n\\}∈ℕ^3,x + n = y + n → x = y$"
 msgstr ""
 
 #: Game.Levels.Add.L06_add_right_cancel
@@ -524,7 +524,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Add.L07_add_left_cancel
-msgid "$∀{x,y,n}∈ℕ^3,n + x = n + y → x = y$"
+msgid "$∀\\{x,y,n\\}∈ℕ^3,n + x = n + y → x = y$"
 msgstr ""
 
 #: Game.Levels.Add.L07_add_left_cancel
@@ -561,7 +561,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Add.L08_add_right_eq_self
-msgid "$∀{x,y}∈ℕ^2,x + y = x → y = 0$"
+msgid "$∀\\{x,y\\}∈ℕ^2,x + y = x → y = 0$"
 msgstr ""
 
 #: Game.Levels.Add.L08_add_right_eq_self
@@ -721,7 +721,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Mul.L03_succ_mul
-msgid "$∀{n,m}∈ℕ²,m' × n = m ⨯ n + n$"
+msgid "$∀\\{n,m\\}∈ℕ²,m' × n = m ⨯ n + n$"
 msgstr ""
 
 #: Game.Levels.Mul.L03_succ_mul
@@ -754,7 +754,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Mul.L04_mul_comm
-msgid "$∀{n,m}∈ℕ²,m × n = n ⨯ m$"
+msgid "$∀\\{n,m\\}∈ℕ²,m × n = n ⨯ m$"
 msgstr ""
 
 #: Game.Levels.Mul.L04_mul_comm
@@ -827,7 +827,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Mul.L07_mul_add
-msgid "$∀{a,b,c}∈ℕ³,a(b+c) = ab + ac$"
+msgid "$∀\\{a,b,c\\}∈ℕ³,a(b+c) = ab + ac$"
 msgstr ""
 
 #: Game.Levels.Mul.L07_mul_add
@@ -852,7 +852,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Mul.L08_add_mul
-msgid "$∀{a,b,c}∈ℕ³,a(b+c) = ab + ac$"
+msgid "$∀\\{a,b,c\\}∈ℕ³,a(b+c) = ab + ac$"
 msgstr ""
 
 #: Game.Levels.Mul.L08_add_mul
@@ -877,7 +877,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Mul.L09_mul_assoc
-msgid "$∀{a,b,c}∈ℕ³,a(bc) = (ab)c$"
+msgid "$∀\\{a,b,c\\}∈ℕ³,a(bc) = (ab)c$"
 msgstr ""
 
 #: Game.Levels.Mul.L09_mul_assoc
@@ -1004,7 +1004,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Pow.L04_pow_add
-msgid "${x,a,b}∈ℕ³→x^(a+b)=x^a*x^b$"
+msgid "$\\{x,a,b\\}∈ℕ³→x^(a+b)=x^a*x^b$"
 msgstr ""
 
 #: Game.Levels.Pow.L04_pow_add
@@ -1029,7 +1029,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Pow.L05_mul_pow
-msgid "${x,a,b}∈ℕ³→(ab)^x=a^x*b^x$"
+msgid "$\\{x,a,b\\}∈ℕ³→(ab)^x=a^x*b^x$"
 msgstr ""
 
 #: Game.Levels.Pow.L05_mul_pow
@@ -1038,6 +1038,56 @@ msgstr ""
 
 #: Game.Levels.Pow.L05_mul_pow
 msgid "Nice try!"
+msgstr ""
+
+#: Game.Levels.Pow.L06_pow_two
+msgid "四角(mul_pow)"
+msgstr ""
+
+#: Game.Levels.Pow.L06_pow_two
+msgid "理解していればできるはずです。"
+msgstr ""
+
+#: Game.Levels.Pow.L06_pow_two
+msgid "## 説明\n"
+"$x$を自然数とする。$x ^ 2= x * x$である。"
+msgstr ""
+
+#: Game.Levels.Pow.L06_pow_two
+msgid "$x∈ℕ→x^2=x*x$"
+msgstr ""
+
+#: Game.Levels.Pow.L06_pow_two
+msgid "Nice try!"
+msgstr ""
+
+#: Game.Levels.Pow.L07_pow_mul
+msgid "乗数(pow_mul)"
+msgstr ""
+
+#: Game.Levels.Pow.L07_pow_mul
+msgid "$x^y^z$について話しましょう。\n"
+"これは、$(x^y)^z$でしょうか？それとも、$x^(y^z)$でしょうか？\n"
+"正解は、当然$x^(y^z)$です。^は右から計算するからね。\n"
+"...これ、前に書いたことがあるような...?"
+msgstr ""
+
+#: Game.Levels.Pow.L07_pow_mul
+msgid "## 説明\n"
+"$x,a,b$を自然数とする。$(x ^ a) ^ b= x ^ ( a * b )$である。"
+msgstr ""
+
+#: Game.Levels.Pow.L07_pow_mul
+msgid "$\\{x,a,b\\}∈ℕ³→(x ^ a) ^ b= x ^ {ab}$"
+msgstr ""
+
+#: Game.Levels.Pow.L07_pow_mul
+msgid "まあ、`induction a`ですね。"
+msgstr ""
+
+#: Game.Levels.Pow.L07_pow_mul
+msgid "そろそろ気づいてる人もいると思いますが、\n"
+"`World ^`はすべて今までのステージが元ネタになっています。"
 msgstr ""
 
 #: Game.Levels.Pow
@@ -1176,7 +1226,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Le.L04_le_trans
-msgid "$∀{a,b,c}∈ℕ³,a ≤ b∧b ≤ c → a ≤ c$"
+msgid "$∀\\{a,b,c\\}∈ℕ³,a ≤ b∧b ≤ c → a ≤ c$"
 msgstr ""
 
 #: Game.Levels.Le.L04_le_trans
@@ -1221,36 +1271,36 @@ msgstr ""
 msgid "おつかれ！"
 msgstr ""
 
-#: Game.Levels.le.L06_le_symm
+#: Game.Levels.Le.L06_le_symm
 msgid "双鏡(le_symm)"
 msgstr ""
 
-#: Game.Levels.le.L06_le_symm
+#: Game.Levels.Le.L06_le_symm
 msgid "Try It!"
 msgstr ""
 
-#: Game.Levels.le.L06_le_symm
+#: Game.Levels.Le.L06_le_symm
 msgid "## 説明\n"
 "$a,b$を自然数とする。$a≤b$かつ$b≤a$なら$a=b$である。"
 msgstr ""
 
-#: Game.Levels.le.L06_le_symm
+#: Game.Levels.Le.L06_le_symm
 msgid "$∀\\{a,b\\}∈ℕ²,a ≤ b ∧ b ≤ a → a = b$"
 msgstr ""
 
-#: Game.Levels.le.L06_le_symm
+#: Game.Levels.Le.L06_le_symm
 msgid "仮定で不等号は即`cases`!"
 msgstr ""
 
-#: Game.Levels.le.L06_le_symm
+#: Game.Levels.Le.L06_le_symm
 msgid "`a = a + w + w_1`"
 msgstr ""
 
-#: Game.Levels.le.L06_le_symm
+#: Game.Levels.Le.L06_le_symm
 msgid "`0 = «{w}»`を示しましょう。`cases «{w}»`でどうぞ。"
 msgstr ""
 
-#: Game.Levels.le.L06_le_symm
+#: Game.Levels.Le.L06_le_symm
 msgid "おつかれ！"
 msgstr ""
 

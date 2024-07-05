@@ -22,7 +22,7 @@ $a,b,c$を自然数とする。$(ab)c=a(bc)$である。
 -/
 TheoremDoc MyGame.mul_assoc as "mul_assoc" in "*"
 
-/--$∀{a,b,c}∈ℕ³,a(bc) = (ab)c$-/
+/--$∀\{a,b,c\}∈ℕ³,a(bc) = (ab)c$-/
 Statement mul_assoc (a b c:ℕ) : (a * b) * c = a * (b * c) := by
   Hint "とりあえず帰納法を使いましょう。
   先ほど証明した`mul_add`を活用できるはずです。

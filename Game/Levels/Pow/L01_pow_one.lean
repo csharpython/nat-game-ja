@@ -11,7 +11,7 @@ namespace MyGame
 
 Introduction "
 累乗のチュートリアルです。
-累乗は、$n^0=1$と$m^n'=m^n*m$の2つで定義されます。
+累乗は、$n^0=1$と$m^n′=m^n*m$の2つで定義されます。
 掛け算の時と似ていますね。
 掛け算の時と要領はそこまで変わらないはずです。
 **恐れずにやってみろ！(これ大事)**
@@ -41,13 +41,13 @@ TheoremDoc MyGame.pow_zero as "pow_zero" in "^"
 
 /--
 ## 説明
-$a,b$を自然数とする。$a^b'=a^b\*a$である。
+$a,b$を自然数とする。$a^b′=a^b\*a$である。
 -/
 TheoremDoc MyGame.pow_succ as "pow_succ" in "^"
 
 NewTheorem MyGame.pow_zero MyGame.pow_succ
 
-/--$x∈ℕ→x^1=1$-/
+/--$x∈ℕ→x^1=x$-/
 Statement pow_one (x:ℕ) : x ^ 1 = x := by
   rw[one_eq_succ_zero,pow_succ,pow_zero,one_mul]
   rfl
