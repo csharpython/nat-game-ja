@@ -14,7 +14,7 @@ namespace MyGame
 
 /-- Modified `casesOn` principal to use `0` instead of `MyNat.zero`. -/
 def casesOn' {P : ℕ → Sort u} (t : ℕ) (zero : P 0)
-    (succ : (a : ℕ) → P (a‘)) : P t := by
+    (succ : (a : ℕ) → P (a′)) : P t := by
   cases t with
   | zero => assumption
   | succ n => apply succ

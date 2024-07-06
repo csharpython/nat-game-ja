@@ -11,7 +11,7 @@ namespace MyGame
 
 Introduction "
 掛け算のチュートリアルです。
-掛け算は、$n*0=0$と$m*n'=m*n+m$の2つで定義されます。
+掛け算は、$n*0=0$と$m*n′=m*n+m$の2つで定義されます。
 足し算の時と似ていますね。
 足し算の時と要領はそこまで変わらないはずです。
 **恐れずにやってみろ！(これ大事)**
@@ -28,7 +28,7 @@ TheoremDoc MyGame.mul_one as "mul_one" in "*"
 /--
   自然数の乗算。
   mul_zero `a * 0 = 0` と、
-  mul_succ `a * b‘ = a * b + a`
+  mul_succ `a * b′ = a * b + a`
   で定義される。
 -/
 DefinitionDoc MyGame.mul as "*"
@@ -42,7 +42,7 @@ TheoremDoc MyGame.mul_zero as "mul_zero" in "*"
 
 /--
 ## 説明
-$a,b$を自然数とする。$a\*b'=a*b+a$である。
+$a,b$を自然数とする。$a\*b′=a*b+a$である。
 -/
 TheoremDoc MyGame.mul_succ as "mul_succ" in "*"
 

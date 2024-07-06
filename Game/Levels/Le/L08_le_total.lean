@@ -16,12 +16,12 @@ Introduction "
 TheoremTab "≤"
 /--
 ## 説明
-$a,b$を自然数とする。`a≤b`か`b‘≤a`である。
+$a,b$を自然数とする。`a≤b`か`b′≤a`である。
 -/
 TheoremDoc MyGame.le_total as "le_total" in "≤"
 
-/--$∀\{a,b\}∈ℕ²,a≤b∨b‘≤a$-/
-Statement le_total (a b:ℕ) : a ≤ b ∨ b‘ ≤ a := by
+/--$∀\{a,b\}∈ℕ²,a≤b∨b′≤a$-/
+Statement le_total (a b:ℕ) : a ≤ b ∨ b′ ≤ a := by
   Hint(hidden := true)"まずは`induction a`！"
   induction a
   exact Or.inl (zero_le _)
@@ -40,7 +40,7 @@ Statement le_total (a b:ℕ) : a ≤ b ∨ b‘ ≤ a := by
   use a
   rw[h_1,succ_add,add_succ]
   rfl
-  exact Or.inr ( le_trans _ _ _ h ( le_succ _ ))
+  exact Or.inr ( le_trans _ n _ h ( le_succ n ))
 Conclusion "
 無事に`cases`を使いこなせましたね！
 "

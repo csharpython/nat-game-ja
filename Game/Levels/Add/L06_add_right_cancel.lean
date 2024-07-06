@@ -34,7 +34,7 @@ TheoremDoc MyGame.add_right_cancel as "add_right_cancel" in "+"
 
 /--
 ## 説明
-$x,y$を自然数とする。$x'=y'$なら、$x=y$である。
+$x,y$を自然数とする。$x′=y′$なら、$x=y$である。
 -/
 TheoremDoc MyGame.succ_inj as "succ_inj" in "ℕ"
 

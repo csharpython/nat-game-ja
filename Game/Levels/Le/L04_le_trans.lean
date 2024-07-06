@@ -15,7 +15,6 @@ Introduction "
 ## `cases`
 新しいtactic `cases`が利用可能になりました。
 このtacticは、∃を含む仮定に対して効果的です。(他にも何か?)
-
 "
 
 /--
@@ -49,7 +48,7 @@ Statement le_trans (a b c:ℕ)(h1 : a ≤ b)(h2 : b ≤ c) : a ≤ c := by
   rfl
 
 Conclusion "
-不等号の世界へようこそ
+不等号の世界へようこそ。
 "
 /- Use these commands to add items to the game's inventory. -/
 

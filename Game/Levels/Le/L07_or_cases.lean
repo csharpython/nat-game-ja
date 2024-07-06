@@ -9,15 +9,11 @@ Title "論理和"
 namespace MyGame
 
 Introduction "
-**exact無効**
-
 `cases`が使える命題をもう一つ紹介します。
 `P ∨ Q`にたいし`cases`を使うと、
 `P`の場合のゴールと
 `Q`の場合のゴールが生成されます！
 "
-
-DisabledTactic exact
 
 /--
 ## 説明
@@ -35,12 +31,8 @@ NewTheorem Or.inl Or.inr
 Statement (a:ℕ)(h : a = 50 ∨ a = 73) : a = 73 ∨ a = 50 := by
   Hint "そうですね、`cases h`です"
   cases h with L R
-  apply Or.inr
-  rw[L]
-  rfl
-  apply Or.inl
-  rw[R]
-  rfl
+  exact Or.inr L
+  exact Or.inl R
 Conclusion "
 このレベルは非常に簡単です。
 つまり、**この次のレベルがめちゃくちゃ難しい**ってこと！

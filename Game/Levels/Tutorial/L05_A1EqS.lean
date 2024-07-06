@@ -18,7 +18,7 @@ Leanでは、自分で定理を作って証明し、ほかの定理の証明に�
 
 /--
 ## 説明
-$a,b$を自然数とする。$a + b' = (a + b)'$ である。
+$a,b$を自然数とする。$a + b′ = (a + b)′$ である。
 -/
 TheoremDoc MyGame.add_succ as "add_succ" in "+"
 
@@ -31,13 +31,13 @@ TheoremDoc MyGame.one_eq_succ_zero as "one_eq_succ_zero" in "ℕ"
 
 /--
 ## 説明
-$a$が自然数なら、$a+1=a'$である。 -/
+$a$が自然数なら、$a+1=a′$である。 -/
 TheoremDoc MyGame.add_one_eq_succ as "add_one_eq_succ" in "+"
 
 NewTheorem MyGame.add_succ MyGame.one_eq_succ_zero
 
-/--$∀a∈ℕ,a+1=a'$-/
-Statement add_one_eq_succ (a : ℕ) : a + 1 = a‘ := by
+/--$∀a∈ℕ,a+1=a′$-/
+Statement add_one_eq_succ (a : ℕ) : a + 1 = a′ := by
   Hint "$1$の定義はなんでしたか？"
   rw[one_eq_succ_zero,add_succ,add_zero]
   rfl

@@ -16,12 +16,12 @@ TheoremTab "*"
 
 /--
 ## 説明
-$m,n$を自然数とする。$m'\*n=m\*n+n$である。
+$m,n$を自然数とする。$m′\*n=m\*n+n$である。
 -/
 TheoremDoc MyGame.succ_mul as "succ_mul" in "*"
 
-/--$∀\{n,m\}∈ℕ²,m' × n = m ⨯ n + n$-/
-Statement succ_mul (m n:ℕ) : m‘ * n = m * n + n := by
+/--$∀\{n,m\}∈ℕ²,m′ × n = m ⨯ n + n$-/
+Statement succ_mul (m n:ℕ) : m′ * n = m * n + n := by
   Hint "他の定理の証明を振り返ってみることは大切です。意外と形が似ていることが多いです。"
   induction n
   rw[mul_zero,mul_zero,add_zero]

@@ -23,7 +23,7 @@ Custom induction principial for the tactics `induction`.
 Used to show `0` instead of `MyNat.zero` in the base case.
 -/
 def rec' {P : ℕ → Prop} (zero : P 0)
-    (succ : (n : ℕ) → (n_ih : P n) → P (MyNat.succ n)) (t : ℕ) : P t := by
+    (succ : (n : ℕ) → (n_ih : P n) → P (n′)) (t : ℕ) : P t := by
   induction t with
   | zero => assumption
   | succ n =>

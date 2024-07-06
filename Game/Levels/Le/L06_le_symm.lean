@@ -27,8 +27,7 @@ Statement le_symm (a b:ℕ)(h1 : a ≤ b)(h2 : b ≤ a) : a = b := by
     rw[h_1] at h
     nth_rewrite 1 [←add_zero b,add_assoc] at h
     apply (add_left_cancel _ _ _) at h
-    --Hint (strict := true)(hidden := true) "`0 = {w_1}`を示しましょう。`cases {w_1}`でどうぞ。"
-    --このヒント、なくても動きそうな気がします。
+    Hint (strict := true)(hidden := true) "`0 = {w_1}`を示しましょう。`cases {w_1}`でどうぞ。"
     cases w_1
     rw[h_1,add_zero]
     rfl

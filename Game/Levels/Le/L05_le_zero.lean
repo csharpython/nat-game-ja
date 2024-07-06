@@ -11,7 +11,9 @@ Title "Boss:虚像(le_zero)"
 namespace MyGame
 
 Introduction "
-Try It!
+World Add-10で出てきたFalseのことを覚えていますか？
+Falseからはどんな命題も導けます。
+このステージは、Falseを何とかして導くことがポイントです！
 "
 TheoremTab "≤"
 

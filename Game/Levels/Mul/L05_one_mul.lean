@@ -31,10 +31,9 @@ Statement one_mul (n:ℕ) : 1 * n = n := by
     rw[mul_one]
     rfl
   induction n
-  exact mul_zero _
+  exact mul_zero 1
   rw[mul_succ,n_ih]
-  Branch
-    exact add_one_eq_succ _
+  Branch apply add_one_eq_succ
   rw[one_eq_succ_zero]
   Hint "イースターエッグ発見！ #3"
   rw[add_succ,add_zero]

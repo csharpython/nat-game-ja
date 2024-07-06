@@ -20,12 +20,12 @@ TheoremTab "≤"
 
 /--
 ## 説明
-$n$を自然数とする。$n≤n‘$である。
+$n$を自然数とする。$n≤n′$である。
 -/
 TheoremDoc MyGame.le_succ as "le_succ" in "≤"
 
-/--$∀n∈ℕ,n ≤ n‘$-/
-Statement le_succ (n:ℕ) : n ≤ n‘ := by
+/--$∀n∈ℕ,n ≤ n′$-/
+Statement le_succ (n:ℕ) : n ≤ n′ := by
   Hint(hidden := true) "add_one_eq_succ"
   use 1
   rw[add_one_eq_succ]

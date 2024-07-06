@@ -20,12 +20,12 @@ TheoremTab "^"
 
 /--
 ## 説明
-$x$を自然数とする。$0^(x‘) = 0$である。
+$x$を自然数とする。$0^(x′) = 0$である。
 -/
 TheoremDoc MyGame.zero_pow as "zero_pow" in "^"
 
-/--$x∈ℕ→0^x'=0$-/
-Statement zero_pow (x:ℕ) : 0 ^ x‘ = 0 := by
+/--$x∈ℕ→0^x′=0$-/
+Statement zero_pow (x:ℕ) : 0 ^ x′ = 0 := by
   rw[pow_succ,mul_zero]
   rfl
 
