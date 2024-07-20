@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sat Jul  6 04:10:14 2024\n"
+"POT-Creation-Date: Mon Jul 15 04:38:50 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -1388,6 +1388,94 @@ msgstr ""
 #: Game.Levels.Le
 msgid "このワールドは、World +で使った「合意」を活用します。\n"
 "頑張ってください!"
+msgstr ""
+
+#: Game.Levels.MulEX.L01_mul_eq_zero
+msgid "因数分解(mul_eq_zero)"
+msgstr ""
+
+#: Game.Levels.MulEX.L01_mul_eq_zero
+msgid "ハードモードへようこそ。"
+msgstr ""
+
+#: Game.Levels.MulEX.L01_mul_eq_zero
+msgid "## 説明\n"
+"$a=b$なら$b=a$"
+msgstr ""
+
+#: Game.Levels.MulEX.L01_mul_eq_zero
+msgid "## 説明\n"
+"$a,b$を自然数とする。$ab=0$なら$a=0$か$b=0$である。"
+msgstr ""
+
+#: Game.Levels.MulEX.L01_mul_eq_zero
+msgid "$∀\\{a,b\\}∈ℕ² ,ab = 0 → a=0∨b=0$"
+msgstr ""
+
+#: Game.Levels.MulEX.L01_mul_eq_zero
+msgid "`cases`でどうぞ"
+msgstr ""
+
+#: Game.Levels.MulEX.L01_mul_eq_zero
+msgid "次行きましょう。"
+msgstr ""
+
+#: Game.Levels.MulEX.L02_mul_le_mul_right
+msgid "大小関係(mul_le_mul_right)"
+msgstr ""
+
+#: Game.Levels.MulEX.L02_mul_le_mul_right
+msgid "これは≤タブと*タブのどちらに入れるべきでしょうか..."
+msgstr ""
+
+#: Game.Levels.MulEX.L02_mul_le_mul_right
+msgid "## 説明\n"
+"$a,b,m$を自然数とする。$a≤b$なら$a\\*t≤b\\*t$である。"
+msgstr ""
+
+#: Game.Levels.MulEX.L02_mul_le_mul_right
+msgid "$∀\\{a,b,m\\}∈ℕ³ ,a ≤ b → am≤bm$"
+msgstr ""
+
+#: Game.Levels.MulEX.L02_mul_le_mul_right
+msgid "`cases`でどうぞ"
+msgstr ""
+
+#: Game.Levels.MulEX.L02_mul_le_mul_right
+msgid "あなたはどうおもいます？"
+msgstr ""
+
+#: Game.Levels.MulEX.L03_le_mul_right
+msgid "複製(le_mul_right)"
+msgstr ""
+
+#: Game.Levels.MulEX.L03_le_mul_right
+msgid "2倍！3倍！"
+msgstr ""
+
+#: Game.Levels.MulEX.L03_le_mul_right
+msgid "## 説明\n"
+"$a,b$を自然数とする。なら$a≤a*b′$である。"
+msgstr ""
+
+#: Game.Levels.MulEX.L03_le_mul_right
+msgid "$∀\\{a,b\\}∈ℕ² , a≤ab′$"
+msgstr ""
+
+#: Game.Levels.MulEX.L03_le_mul_right
+msgid "`cases`でどうぞ"
+msgstr ""
+
+#: Game.Levels.MulEX.L03_le_mul_right
+msgid "なんか`cases`の役割多くない？"
+msgstr ""
+
+#: Game.Levels.MulEX
+msgid "World x EX"
+msgstr ""
+
+#: Game.Levels.MulEX
+msgid "World xのハードモードです。"
 msgstr ""
 
 #: Game

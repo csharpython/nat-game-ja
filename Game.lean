@@ -3,6 +3,7 @@ import Game.Levels.Add
 import Game.Levels.Mul
 import Game.Levels.Pow
 import Game.Levels.Le
+import Game.Levels.MulEX
 
 -- Here's what we'll put on the title screen
 Title "自然数ゲーム"

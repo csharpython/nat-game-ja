@@ -38,7 +38,7 @@ $x$を自然数とする。$0+x=x$である。
 TheoremDoc MyGame.zero_add as "zero_add" in "+"
 
 /--$∀x∈ℕ,0 + x = x$-/
-Statement zero_add (x:ℕ) : 0 + x = x := by
+Statement zero_add {x:ℕ} : 0 + x = x := by
   Hint "`induction x`"
   induction x
   rw[add_zero]
