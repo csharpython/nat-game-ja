@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Mon Jul 15 04:38:50 2024\n"
+"POT-Creation-Date: Tue Aug  6 08:21:02 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -906,7 +906,7 @@ msgstr ""
 
 #: Game.Levels.Pow.L01_pow_one
 msgid "累乗のチュートリアルです。\n"
-"累乗は、$n^0=1$と$m^{n′}=m^n*m$の2つで定義されます。\n"
+"累乗は、$n^0=1$と$m^{n′}=m^nm$の2つで定義されます。\n"
 "掛け算の時と似ていますね。\n"
 "掛け算の時と要領はそこまで変わらないはずです。\n"
 "**恐れずにやってみろ！(これ大事)**"
@@ -935,7 +935,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Pow.L01_pow_one
-msgid "$x∈ℕ→x^1=x$"
+msgid "$∀x∈ℕ,x^1=x$"
 msgstr ""
 
 #: Game.Levels.Pow.L01_pow_one
@@ -960,7 +960,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Pow.L02_zero_pow
-msgid "$x∈ℕ→0^x′=0$"
+msgid "$∀x∈ℕ,0^{x′}=0$"
 msgstr ""
 
 #: Game.Levels.Pow.L02_zero_pow
@@ -981,7 +981,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Pow.L03_one_pow
-msgid "$x∈ℕ→1^x=1$"
+msgid "$∀x∈ℕ,1^x=1$"
 msgstr ""
 
 #: Game.Levels.Pow.L03_one_pow
@@ -1000,11 +1000,11 @@ msgstr ""
 
 #: Game.Levels.Pow.L04_pow_add
 msgid "## 説明\n"
-"$x$を自然数とする。$x^(a+b)=x^a*x^b$である。"
+"$x$を自然数とする。$x^{a+b}=x^a x^b$である。"
 msgstr ""
 
 #: Game.Levels.Pow.L04_pow_add
-msgid "$\\{x,a,b\\}∈ℕ³→x^(a+b)=x^a*x^b$"
+msgid "$∀\\{x,a,b\\}∈ℕ³→x^{a+b}=x^a x^b$"
 msgstr ""
 
 #: Game.Levels.Pow.L04_pow_add
@@ -1025,11 +1025,11 @@ msgstr ""
 
 #: Game.Levels.Pow.L05_mul_pow
 msgid "## 説明\n"
-"$x$を自然数とする。$(ab)^x=a^x*b^x$である。"
+"$x$を自然数とする。$(ab)^x=a^x b^x$である。"
 msgstr ""
 
 #: Game.Levels.Pow.L05_mul_pow
-msgid "$\\{x,a,b\\}∈ℕ³→(ab)^x=a^x*b^x$"
+msgid "$∀\\{x,a,b\\}∈ℕ³→(ab)^x=a^x b^x$"
 msgstr ""
 
 #: Game.Levels.Pow.L05_mul_pow
@@ -1050,11 +1050,11 @@ msgstr ""
 
 #: Game.Levels.Pow.L06_pow_two
 msgid "## 説明\n"
-"$x$を自然数とする。$x ^ 2= x * x$である。"
+"$x$を自然数とする。$x ^ 2= xx$である。"
 msgstr ""
 
 #: Game.Levels.Pow.L06_pow_two
-msgid "$x∈ℕ→x^2=x*x$"
+msgid "$∀x∈ℕ,x^2=xx$"
 msgstr ""
 
 #: Game.Levels.Pow.L06_pow_two
@@ -1078,7 +1078,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.Pow.L07_pow_mul
-msgid "$\\{x,a,b\\}∈ℕ³→(x ^ a) ^ b= x ^ {ab}$"
+msgid "$∀\\{x,a,b\\}∈ℕ³→(x^a)^b=x^{ab}$"
 msgstr ""
 
 #: Game.Levels.Pow.L07_pow_mul
@@ -1455,11 +1455,11 @@ msgstr ""
 
 #: Game.Levels.MulEX.L03_le_mul_right
 msgid "## 説明\n"
-"$a,b$を自然数とする。なら$a≤a*b′$である。"
+"$a,b$を自然数とする。$a≤a*b′$である。"
 msgstr ""
 
 #: Game.Levels.MulEX.L03_le_mul_right
-msgid "$∀\\{a,b\\}∈ℕ² , a≤ab′$"
+msgid "$∀\\{a,b\\}∈ℕ² , a≤a(b′)$"
 msgstr ""
 
 #: Game.Levels.MulEX.L03_le_mul_right
@@ -1468,6 +1468,39 @@ msgstr ""
 
 #: Game.Levels.MulEX.L03_le_mul_right
 msgid "なんか`cases`の役割多くない？"
+msgstr ""
+
+#: Game.Levels.MulEX.L04_mul_eq_self
+msgid "複製失敗(mul_right_eq_one)"
+msgstr ""
+
+#: Game.Levels.MulEX.L04_mul_eq_self
+msgid "等倍！"
+msgstr ""
+
+#: Game.Levels.MulEX.L04_mul_eq_self
+msgid "## 説明\n"
+"$a,b$を自然数とする。$a′b=a′$なら$b=1$である。"
+msgstr ""
+
+#: Game.Levels.MulEX.L04_mul_eq_self
+msgid "$∀\\{a,b\\}∈ℕ²,a′*b=a′→b=1$"
+msgstr ""
+
+#: Game.Levels.MulEX.L04_mul_eq_self
+msgid "`cases`でどうぞ。案の定。"
+msgstr ""
+
+#: Game.Levels.MulEX.L04_mul_eq_self
+msgid "ここで`«{h}»`の左辺を`?+«{a}»′`の形で表してみましょう"
+msgstr ""
+
+#: Game.Levels.MulEX.L04_mul_eq_self
+msgid "因数分解"
+msgstr ""
+
+#: Game.Levels.MulEX.L04_mul_eq_self
+msgid "なんか`cases`の役割多くない？やっぱり。"
 msgstr ""
 
 #: Game.Levels.MulEX

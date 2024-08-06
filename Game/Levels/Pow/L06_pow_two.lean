@@ -15,11 +15,11 @@ TheoremTab "^"
 
 /--
 ## 説明
-$x$を自然数とする。$x ^ 2= x * x$である。
+$x$を自然数とする。$x ^ 2= xx$である。
 -/
 TheoremDoc MyGame.pow_two as "pow_two" in "^"
 
-/--$x∈ℕ→x^2=x*x$-/
+/--$∀x∈ℕ,x^2=xx$-/
 Statement pow_two (x:ℕ) : x^2 = x * x:= by
   rw[two_eq_succ_one,pow_succ,pow_one]
   rfl

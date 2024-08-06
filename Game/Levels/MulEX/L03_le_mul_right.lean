@@ -16,7 +16,7 @@ TheoremTab "*"
 
 /--
 ## 説明
-$a,b$を自然数とする。なら$a≤a*b′$である。
+$a,b$を自然数とする。$a≤a*b′$である。
 -/
 TheoremDoc MyGame.le_mul_right as "le_mul_right" in "*"
 

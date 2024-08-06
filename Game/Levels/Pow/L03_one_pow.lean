@@ -20,7 +20,7 @@ $x$を自然数とする。$1^x=1$である。
 -/
 TheoremDoc MyGame.one_pow as "one_pow" in "^"
 
-/--$x∈ℕ→1^x=1$-/
+/--$∀x∈ℕ,1^x=1$-/
 Statement one_pow (x:ℕ) : 1 ^ x = 1 := by
   induction x
   exact pow_zero 1

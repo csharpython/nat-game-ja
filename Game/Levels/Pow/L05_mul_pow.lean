@@ -15,11 +15,11 @@ TheoremTab "^"
 
 /--
 ## 説明
-$x$を自然数とする。$(ab)^x=a^x*b^x$である。
+$x$を自然数とする。$(ab)^x=a^x b^x$である。
 -/
 TheoremDoc MyGame.mul_pow as "mul_pow" in "^"
 
-/--$\{x,a,b\}∈ℕ³→(ab)^x=a^x*b^x$-/
+/--$∀\{x,a,b\}∈ℕ³→(ab)^x=a^x b^x$-/
 Statement mul_pow (x a b:ℕ) : (a * b) ^ x = a ^ x * b ^ x := by
   induction x
   rw[pow_zero,pow_zero,pow_zero,mul_one]
