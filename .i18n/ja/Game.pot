@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Tue Aug  6 08:21:02 2024\n"
+"POT-Creation-Date: Mon Aug 12 09:36:13 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -1430,7 +1430,7 @@ msgstr ""
 
 #: Game.Levels.MulEX.L02_mul_le_mul_right
 msgid "## 説明\n"
-"$a,b,m$を自然数とする。$a≤b$なら$a\\*t≤b\\*t$である。"
+"$a,b,m$を自然数とする。$a≤b$なら$a\\*m≤b\\*m$である。"
 msgstr ""
 
 #: Game.Levels.MulEX.L02_mul_le_mul_right
@@ -1501,6 +1501,75 @@ msgstr ""
 
 #: Game.Levels.MulEX.L04_mul_eq_self
 msgid "なんか`cases`の役割多くない？やっぱり。"
+msgstr ""
+
+#: Game.Levels.MulEX.L05_mul_left_ne_zero
+msgid "因数分解・裏(mul_left_ne_zero)"
+msgstr ""
+
+#: Game.Levels.MulEX.L05_mul_left_ne_zero
+msgid "## 説明\n"
+"`P→Q`のようなゴールに対して`intro h`とすると、\n"
+"仮定`h:P`が追加され、ゴールが`Q`になります。\n"
+"また、`∀(a:ℕ),P a`にたいして`intro n`とすると、\n"
+"仮定に`n:ℕ`が追加され、ゴールが`P n`になります。\n"
+"\n"
+"## 補足\n"
+"一部、`intro`が使えなさそうでも使える場合があります。\n"
+"例\n"
+"`N≠M`:これは`(N=M)→False`の略記です。\n"
+"`¬P`:これは`P→False`の略記です。"
+msgstr ""
+
+#: Game.Levels.MulEX.L05_mul_left_ne_zero
+msgid "## 新しいタクティク：`intro`\n"
+"\"PならばQ\"といった形のゴールに対して使えます。\n"
+"\n"
+"$p→q$\n"
+"裏：$¬p→¬q$\n"
+"逆：$q→p$\n"
+"対偶：$¬q→¬p$"
+msgstr ""
+
+#: Game.Levels.MulEX.L05_mul_left_ne_zero
+msgid "## 説明\n"
+"$a,b$を自然数とする。$ab≠0$なら$b≠0$である。"
+msgstr ""
+
+#: Game.Levels.MulEX.L05_mul_left_ne_zero
+msgid "$∀\\{a,b\\}∈ℕ²,ab≠0→b=0$"
+msgstr ""
+
+#: Game.Levels.MulEX.L05_mul_left_ne_zero
+msgid "`intro`でどうぞ。"
+msgstr ""
+
+#: Game.Levels.MulEX.L05_mul_left_ne_zero
+msgid "ここで`0≠0`は`(0=0)→False`の略記であることを思い出しましょう"
+msgstr ""
+
+#: Game.Levels.MulEX.L05_mul_left_ne_zero
+msgid "とうとう`cases`以外にも光が...！"
+msgstr ""
+
+#: Game.Levels.MulEX.L06_intro_forall
+msgid "(*‘∀‘)"
+msgstr ""
+
+#: Game.Levels.MulEX.L06_intro_forall
+msgid "## 全称記号\n"
+"∀←これです。\n"
+"`∀(a:ℕ),P a`は、\n"
+"全ての$a$に対して$P a$を満たすということを表します。\n"
+"`intro`が使えます。"
+msgstr ""
+
+#: Game.Levels.MulEX.L06_intro_forall
+msgid "$∃e∈ℕ,∀n∈ℕ,n*e=n$"
+msgstr ""
+
+#: Game.Levels.MulEX.L06_intro_forall
+msgid "そうです。次の問題がめちゃくちゃ難しいです。"
 msgstr ""
 
 #: Game.Levels.MulEX
