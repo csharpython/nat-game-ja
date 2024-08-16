@@ -9,10 +9,9 @@ inductive MyNat where
 @[inherit_doc]
 notation (name := MyNatNotation) (priority := 1000000) "ℕ" => MyNat
 -- Note: as long as we do not import `Mathlib.Init.Data.Nat.Notation` this is fine.
---notation:300 a:300 "‘" => MyNat.succ a
+notation:300 a:300 "′" => MyNat.succ a
 -- Note: This was originally ‘ (\lq) but I thought ′ (\prime) is better.
 -- I have a question. What is ‘?
-notation:300 a:300 "′" => MyNat.succ a
 
 namespace MyGame
 
@@ -42,5 +41,5 @@ theorem zero_eq_0 : MyNat.zero = 0 := rfl
 
 def one : MyNat := 0′
 
-axiom succ_inj (x y:MyNat) : x′ = y′ → x = y
-axiom zero_ne_succ (x:MyNat) : 0 = x′ → False
+theorem succ_inj (x y:MyNat) : x′ = y′ → x = y := MyNat.succ.inj
+theorem zero_ne_succ (x:MyNat) : 0 = x′ → False := MyNat.noConfusion
