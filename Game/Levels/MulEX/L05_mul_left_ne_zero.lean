@@ -27,13 +27,16 @@ Introduction "
 ## 新しいタクティク：`intro`
 \"PならばQ\"といった形のゴールに対して使えます。
 
-$p→q$
-裏：$¬p→¬q$
-逆：$q→p$
-対偶：$¬q→¬p$
+$p→q$に対する裏：$¬p→¬q$
 "
 
 TheoremTab "*"
+
+/--
+  `a≠b`は`a=b→False`の略記。
+  直接入力するなら`\ne`を使おう！
+-/
+DefinitionDoc Ne as "≠"
 
 /--
 ## 説明
@@ -41,7 +44,7 @@ $a,b$を自然数とする。$ab≠0$なら$b≠0$である。
 -/
 TheoremDoc MyGame.mul_left_ne_zero as "mul_left_ne_zero" in "*"
 
-/--$∀\{a,b\}∈ℕ²,ab≠0→b=0$-/
+/--$∀\{a,b\}∈ℕ²,ab≠0→b≠0$-/
 Statement mul_left_ne_zero (a b:ℕ)(h:a*b≠0) : b≠0 := by
   Hint "`intro`でどうぞ。"
   intro i
@@ -57,4 +60,4 @@ Conclusion "
 
 NewTactic intro
 -- NewTheorem eq_comm
--- NewDefinition Nat Add Eq
+NewDefinition Ne

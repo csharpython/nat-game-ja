@@ -30,7 +30,7 @@ DefinitionDoc MyGame.add as "+"
   $a′ = aの次$
   直接入力するなら`\prime`を使おう！
 -/
-DefinitionDoc MyGame.MyNat.succ as "‘"
+DefinitionDoc MyGame.MyNat.succ as "′"
 
 NewDefinition MyGame.add MyGame.MyNat.succ
 

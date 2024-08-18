@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Fri Aug 16 08:49:01 2024\n"
+"POT-Creation-Date: Sun Aug 18 02:42:52 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -956,7 +956,7 @@ msgstr ""
 
 #: Game.Levels.Pow.L02_zero_pow
 msgid "## 説明\n"
-"$x$を自然数とする。$0^(x′) = 0$である。"
+"$x$を自然数とする。$0^{x′} = 0$である。"
 msgstr ""
 
 #: Game.Levels.Pow.L02_zero_pow
@@ -1066,15 +1066,15 @@ msgid "乗数(pow_mul)"
 msgstr ""
 
 #: Game.Levels.Pow.L07_pow_mul
-msgid "$x^y^z$について話しましょう。\n"
-"これは、$(x^y)^z$でしょうか？それとも、$x^(y^z)$でしょうか？\n"
-"正解は、当然$x^(y^z)$です。^は右から計算するからね。\n"
+msgid "$x^{y^z}$について話しましょう。\n"
+"これは、$(x^y)^z$でしょうか？それとも、$x^{(y^z)}$でしょうか？\n"
+"正解は、当然$x^{(y^z)}$です。^は右から計算するからね。\n"
 "...これ、前に書いたことがあるような...?"
 msgstr ""
 
 #: Game.Levels.Pow.L07_pow_mul
 msgid "## 説明\n"
-"$x,a,b$を自然数とする。$(x ^ a) ^ b= x ^ ( a * b )$である。"
+"$x,a,b$を自然数とする。$(x ^ a) ^ b= x^{ab}$である。"
 msgstr ""
 
 #: Game.Levels.Pow.L07_pow_mul
@@ -1113,7 +1113,7 @@ msgid "## $∃$\n"
 "\n"
 "を使えばよいです！\n"
 "\n"
-"##≤の意味\n"
+"## ≤の意味\n"
 "`a ≤ b`と`∃ (c : ℕ), b = a + c`は同じ意味です。\n"
 "そのため、`use`が使えます！"
 msgstr ""
@@ -1129,8 +1129,13 @@ msgid "自然数の大小比較\n"
 msgstr ""
 
 #: Game.Levels.Le.L01_zero_le
+msgid "`∃x,P x`は、P xを満たすxが存在することを表しています。\n"
+"  直接入力するなら`\\ex`を使おう！"
+msgstr ""
+
+#: Game.Levels.Le.L01_zero_le
 msgid "## 説明\n"
-"$∃v,P(v)$に対して、`use w`を使うと、ゴールがP(w)に変化します。"
+"`∃v,P(v)`に対して、`use w`を使うと、ゴールが`P(w)`に変化します。"
 msgstr ""
 
 #: Game.Levels.Le.L01_zero_le
@@ -1525,10 +1530,12 @@ msgstr ""
 msgid "## 新しいタクティク：`intro`\n"
 "\"PならばQ\"といった形のゴールに対して使えます。\n"
 "\n"
-"$p→q$\n"
-"裏：$¬p→¬q$\n"
-"逆：$q→p$\n"
-"対偶：$¬q→¬p$"
+"$p→q$に対する裏：$¬p→¬q$"
+msgstr ""
+
+#: Game.Levels.MulEX.L05_mul_left_ne_zero
+msgid "`a≠b`は`a=b→False`の略記。\n"
+"  直接入力するなら`\\ne`を使おう！"
 msgstr ""
 
 #: Game.Levels.MulEX.L05_mul_left_ne_zero
@@ -1537,7 +1544,7 @@ msgid "## 説明\n"
 msgstr ""
 
 #: Game.Levels.MulEX.L05_mul_left_ne_zero
-msgid "$∀\\{a,b\\}∈ℕ²,ab≠0→b=0$"
+msgid "$∀\\{a,b\\}∈ℕ²,ab≠0→b≠0$"
 msgstr ""
 
 #: Game.Levels.MulEX.L05_mul_left_ne_zero
@@ -1557,11 +1564,18 @@ msgid "(*‘∀‘)"
 msgstr ""
 
 #: Game.Levels.MulEX.L06_intro_forall
-msgid "## 全称記号\n"
+msgid "**exact無効**\n"
+"\n"
+"## 全称記号\n"
 "∀←これです。\n"
 "`∀(a:ℕ),P a`は、\n"
 "全ての$a$に対して$P a$を満たすということを表します。\n"
 "`intro`が使えます。"
+msgstr ""
+
+#: Game.Levels.MulEX.L06_intro_forall
+msgid "`∀x,P x`は、全ての`x`で`P x`であることを表しています。\n"
+"  直接入力するなら`\\all`を使おう！"
 msgstr ""
 
 #: Game.Levels.MulEX.L06_intro_forall

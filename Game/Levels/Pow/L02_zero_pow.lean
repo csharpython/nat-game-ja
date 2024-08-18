@@ -20,7 +20,7 @@ TheoremTab "^"
 
 /--
 ## 説明
-$x$を自然数とする。$0^(x′) = 0$である。
+$x$を自然数とする。$0^{x′} = 0$である。
 -/
 TheoremDoc MyGame.zero_pow as "zero_pow" in "^"
 

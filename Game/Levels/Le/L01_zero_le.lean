@@ -20,7 +20,7 @@ $∃v,P(v)$は$P(v)$を満たす$v$があることを表しています。
 
 を使えばよいです！
 
-##≤の意味
+## ≤の意味
 `a ≤ b`と`∃ (c : ℕ), b = a + c`は同じ意味です。
 そのため、`use`が使えます！
 "
@@ -38,11 +38,19 @@ TheoremDoc MyGame.zero_le as "zero_le" in "≤"
   `a ≤ b ↔ ∃ (c : ℕ), b = a + c`
 -/
 DefinitionDoc MyGame.le as "≤"
-NewDefinition MyGame.le
+
+
+/--
+  `∃x,P x`は、P xを満たすxが存在することを表しています。
+  直接入力するなら`\ex`を使おう！
+-/
+DefinitionDoc Exists as "∃"
+
+NewDefinition MyGame.le Exists
 
 /--
 ## 説明
-$∃v,P(v)$に対して、`use w`を使うと、ゴールがP(w)に変化します。
+`∃v,P(v)`に対して、`use w`を使うと、ゴールが`P(w)`に変化します。
 -/
 TacticDoc use
 

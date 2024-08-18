@@ -10,6 +10,8 @@ namespace MyGame
 
 
 Introduction "
+**exact無効**
+
 ## 全称記号
 ∀←これです。
 `∀(a:ℕ),P a`は、
@@ -17,8 +19,16 @@ Introduction "
 `intro`が使えます。
 "
 
-TheoremTab "*"
+/--
+  `∀x,P x`は、全ての`x`で`P x`であることを表しています。
+  直接入力するなら`\all`を使おう！
+-/
+DefinitionDoc Forall as "∀"
 
+NewDefinition Forall
+
+
+DisabledTactic exact
 /--$∃e∈ℕ,∀n∈ℕ,n*e=n$-/
 Statement : ∃(e:ℕ),∀(n:ℕ),n*e=n := by
   use 1
