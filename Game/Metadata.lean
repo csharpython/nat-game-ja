@@ -8,6 +8,7 @@ import Game.MyObj.Tactic.use
 import Game.MyObj.Tactic.cases
 import Mathlib.Tactic.ApplyAt
 import Mathlib.Tactic.NthRewrite
+import Mathlib.Tactic.Contrapose
 
 -- import Mathlib.Tactic.Common
 

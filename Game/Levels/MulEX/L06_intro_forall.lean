@@ -10,7 +10,7 @@ namespace MyGame
 
 
 Introduction "
-**exact無効**
+**exact、apply無効**
 
 ## 全称記号
 ∀←これです。
@@ -24,12 +24,10 @@ Introduction "
   直接入力するなら`\all`を使おう！
 -/
 DefinitionDoc Forall as "∀"
-
 NewDefinition Forall
 
-
-DisabledTactic exact
-/--$∃e∈ℕ,∀n∈ℕ,n*e=n$-/
+DisabledTactic exact apply
+/--$∃e∈ℕ,∀n∈ℕ,ne=n$-/
 Statement : ∃(e:ℕ),∀(n:ℕ),n*e=n := by
   use 1
   intro
@@ -37,7 +35,7 @@ Statement : ∃(e:ℕ),∀(n:ℕ),n*e=n := by
   rfl
 
 Conclusion "
-そうです。次の問題がめちゃくちゃ難しいです。
+これはまだ準備段階にすぎません...
 "
 
 /- Use these commands to add items to the game's inventory. -/

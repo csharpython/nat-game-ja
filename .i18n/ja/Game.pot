@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sun Aug 18 02:42:52 2024\n"
+"POT-Creation-Date: Tue Sep 10 11:06:29 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -530,7 +530,7 @@ msgstr ""
 #: Game.Levels.Add.L07_add_left_cancel
 msgid "ここでただ`rw[add_comm] at h`を行うと、`x + n`が元に戻るだけです。\n"
 "変数を指定して、`y + n`を交換できるようにしましょう。\n"
-"やり方？W+-5でやったでしょう？"
+"やり方？W+-5を思い出して！"
 msgstr ""
 
 #: Game.Levels.Add.L07_add_left_cancel
@@ -1564,7 +1564,7 @@ msgid "(*‘∀‘)"
 msgstr ""
 
 #: Game.Levels.MulEX.L06_intro_forall
-msgid "**exact無効**\n"
+msgid "**exact、apply無効**\n"
 "\n"
 "## 全称記号\n"
 "∀←これです。\n"
@@ -1579,11 +1579,85 @@ msgid "`∀x,P x`は、全ての`x`で`P x`であることを表しています�
 msgstr ""
 
 #: Game.Levels.MulEX.L06_intro_forall
-msgid "$∃e∈ℕ,∀n∈ℕ,n*e=n$"
+msgid "$∃e∈ℕ,∀n∈ℕ,ne=n$"
 msgstr ""
 
 #: Game.Levels.MulEX.L06_intro_forall
-msgid "そうです。次の問題がめちゃくちゃ難しいです。"
+msgid "これはまだ準備段階にすぎません..."
+msgstr ""
+
+#: Game.Levels.MulEX.L07_mul_ne_zero
+msgid "対偶(mul_ne_zero)"
+msgstr ""
+
+#: Game.Levels.MulEX.L07_mul_ne_zero
+msgid "**`rw`、`rfl`無効**\n"
+"対偶とは何でしょうか？"
+msgstr ""
+
+#: Game.Levels.MulEX.L07_mul_ne_zero
+msgid "## 説明\n"
+"`contrapose! h`とすると、ゴールと仮定`h`が入れ替わり、さらに両方が否定されます。\n"
+"対偶ですね"
+msgstr ""
+
+#: Game.Levels.MulEX.L07_mul_ne_zero
+msgid "## 説明\n"
+"$a,b$を自然数とする。$a≠0$かつ$b≠0$なら$ab≠0$である。"
+msgstr ""
+
+#: Game.Levels.MulEX.L07_mul_ne_zero
+msgid "$∀\\{a,b\\}∈ℕ²,(a≠0∧b≠0)→ab≠0$"
+msgstr ""
+
+#: Game.Levels.MulEX.L07_mul_ne_zero
+msgid "なぜ簡単な問題が2連続で出たのでしょう？\n"
+"しかもこれEXTRAだし。\n"
+"「嵐の前の静けさ」ですかね。"
+msgstr ""
+
+#: Game.Levels.MulEX.L08_mul_right_cancel
+msgid "Re:→"
+msgstr ""
+
+#: Game.Levels.MulEX.L08_mul_right_cancel
+msgid "マジかよ。(想定解23行)\n"
+"\n"
+"## revert\n"
+"新しいタクティク`revert`をアンロックしました。\n"
+"`revert`は`intro`の逆のことをします。\n"
+"...いつ使うの？"
+msgstr ""
+
+#: Game.Levels.MulEX.L08_mul_right_cancel
+msgid "## 説明\n"
+"`intro`の逆です。"
+msgstr ""
+
+#: Game.Levels.MulEX.L08_mul_right_cancel
+msgid "## 説明\n"
+"$a,b$を自然数とする。$x≠0$かつ$ax=bx$なら$a=b$である。"
+msgstr ""
+
+#: Game.Levels.MulEX.L08_mul_right_cancel
+msgid "$∀\\{a,b,x\\}∈ℕ³,(x≠0∧ax=bx)→ab≠0$"
+msgstr ""
+
+#: Game.Levels.MulEX.L08_mul_right_cancel
+msgid "`revert «{b}»`"
+msgstr ""
+
+#: Game.Levels.MulEX.L08_mul_right_cancel
+msgid "`induction «{a}»`"
+msgstr ""
+
+#: Game.Levels.MulEX.L08_mul_right_cancel
+msgid "`cases «{b}»`"
+msgstr ""
+
+#: Game.Levels.MulEX.L08_mul_right_cancel
+msgid "この問題はEXTRAの中でも最強...!\n"
+"もう後はウィニングランです！"
 msgstr ""
 
 #: Game.Levels.MulEX

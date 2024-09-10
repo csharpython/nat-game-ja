@@ -36,7 +36,7 @@ Statement add_left_cancel (x y n:ℕ)(h:n + x = n + y) : x = y := by
   Hint (hidden := true)(strict := true) "
 ここでただ`rw[add_comm] at h`を行うと、`x + n`が元に戻るだけです。
 変数を指定して、`y + n`を交換できるようにしましょう。
-やり方？W+-5でやったでしょう？"
+やり方？W+-5を思い出して！"
   rw[add_comm n] at h
   Hint (hidden := true)(strict := true) "
 ここでただ`exact add_right_cancel`とするだけでは、(案の定)うまく行きません。
