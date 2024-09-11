@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Tue Sep 10 11:06:29 2024\n"
+"POT-Creation-Date: Wed Sep 11 12:55:08 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -1658,6 +1658,27 @@ msgstr ""
 #: Game.Levels.MulEX.L08_mul_right_cancel
 msgid "この問題はEXTRAの中でも最強...!\n"
 "もう後はウィニングランです！"
+msgstr ""
+
+#: Game.Levels.MulEX.L09_mul_right_eq_one
+msgid "1*1"
+msgstr ""
+
+#: Game.Levels.MulEX.L09_mul_right_eq_one
+msgid "`mul_eq_zero`と見た目だけ似ていますね。見た目だけ。"
+msgstr ""
+
+#: Game.Levels.MulEX.L09_mul_right_eq_one
+msgid "## 説明\n"
+"$a,b$を自然数とする。$ab=1$なら$a=1$である。"
+msgstr ""
+
+#: Game.Levels.MulEX.L09_mul_right_eq_one
+msgid "$∀\\{a,b\\}∈ℕ²,ab=1→b=1$"
+msgstr ""
+
+#: Game.Levels.MulEX.L09_mul_right_eq_one
+msgid "お疲れ様です。"
 msgstr ""
 
 #: Game.Levels.MulEX
