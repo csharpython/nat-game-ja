@@ -23,7 +23,6 @@ TheoremDoc MyGame.zero_ne_succ as "zero_ne_succ" in "ℕ"
 
 /--$1≠2$-/
 Statement (h:(1:ℕ) = 2) : False := by
-  rw[two_eq_succ_one,one_eq_succ_zero] at h
   exact zero_ne_succ 0 (succ_inj 0 _ h)
 Conclusion "
 お疲れさまでした！このワールドで学んだことは数学上の様々なことに生かせます！

@@ -18,8 +18,7 @@ theorem ofNat_succ : (OfNat.ofNat n′ : ℕ) = (OfNat.ofNat n)′ := _root_.rfl
 
 opaque mul : MyNat → MyNat → MyNat
 
-instance : Mul MyNat where
-  mul := MyGame.mul
+instance : Mul MyNat where mul := MyGame.mul
 
 @[MyNat_decide]
 axiom mul_zero (a : MyNat) : a * 0 = 0

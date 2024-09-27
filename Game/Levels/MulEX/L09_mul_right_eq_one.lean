@@ -30,8 +30,7 @@ Statement mul_right_eq_one (a b:ℕ)(h:a*b=1) : a=1 := by
   rw[mul_zero] at h
   exact False.elim (zero_ne_succ 0 h)
   rw[mul_succ,add_succ,add_succ,eq_comm] at h
-  apply succ_inj at h
-  exact False.elim (zero_ne_succ _ h)
+  exact False.elim (zero_ne_succ _ (succ_inj _ _ h))
 Conclusion "
 お疲れ様です。
 "

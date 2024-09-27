@@ -47,9 +47,7 @@ Statement add_right_cancel (x y n:ℕ)(h:x + n = y + n) : x = y := by
   rfl
   Hint (hidden := true) "succ.injが使えるように変形してみましょう。"
   rw[add_succ,add_succ] at h
-  apply succ_inj at h
-  apply n_ih at h
-  rw[h]
+  rw[n_ih (succ_inj _ _ h)]
   rfl
 Conclusion "
 もう一つの書き換えのやり方はわかりましたか？

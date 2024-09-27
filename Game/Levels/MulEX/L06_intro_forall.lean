@@ -10,7 +10,7 @@ namespace MyGame
 
 
 Introduction "
-**exact、apply無効**
+**exact、apply無効**(余裕があればなぜ無効なのか考えてみよう！)
 
 ## 全称記号
 ∀←これです。
