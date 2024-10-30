@@ -1,3 +1,5 @@
+-- from NNG4
+-- ちょっと編集した
 /-- Our copy of the natural numbers called `MyNat`, with notation `ℕ`. -/
 inductive MyNat where
 | zero : MyNat
