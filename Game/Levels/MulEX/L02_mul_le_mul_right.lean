@@ -24,8 +24,8 @@ TheoremDoc MyGame.mul_le_mul_right as "mul_le_mul_right" in "*"
 Statement mul_le_mul_right (a b m:ℕ)(h : a ≤ b) : a * m ≤ b * m := by
   Hint(hidden := true) "`cases`でどうぞ"
   cases h
-  use w*m
-  rw[h_1]
+  exists w*m
+  rewrite[h_1]
   apply add_mul
 Conclusion "
 あなたはどうおもいます？

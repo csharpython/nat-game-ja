@@ -19,7 +19,7 @@ TheoremTab "2n"
 ## 説明
 0は偶数
 -/
-TheoremDoc MyGame.zero_is_even as "zero_is_even" in "ℕ"
+TheoremDoc MyGame.zero_is_even as "zero_is_even" in "2n"
 /--
   自然数が偶数か判定する
   `even n ↔ ∃ (m : ℕ), m * 2 = n`
@@ -29,15 +29,15 @@ DefinitionDoc MyGame.even as "even"
 
 /--0 is even-/
 Statement zero_is_even : even 0 := by
-  Hint(hidden := true) "`use`"
-  use 0
-  rw[zero_mul]
+  Hint(hidden := true) "`exists`"
+  exists 0
+  rewrite[zero_mul]
   rfl
 Conclusion "
 0は偶数ですね！
 "
 
--- NewTactic use
+-- NewTactic exists
 /- Use these commands to add items to the game's inventory. -/
 
 -- NewTactic induction

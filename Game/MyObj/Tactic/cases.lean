@@ -1,3 +1,5 @@
+-- from https://github.com/leanprover-community/NNG4/blob/main/Game/Tactic/Cases.lean
+-- Modified
 import Game.MyObj.MyNat.MyNat
 import Mathlib.Tactic.Cases
 

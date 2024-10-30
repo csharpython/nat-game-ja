@@ -21,15 +21,15 @@ TheoremDoc MyGame.mul_right_eq_one as "mul_right_eq_one" in "*"
 /--$∀\{a,b\}∈ℕ²,ab=1→b=1$-/
 Statement mul_right_eq_one (a b:ℕ)(h:a*b=1) : a=1 := by
   cases a with a a
-  rw[zero_mul] at h
+  rewrite[zero_mul] at h
   exact False.elim (zero_ne_succ 0 h)
   cases a with a a
-  rw[one_eq_succ_zero]
+  rewrite[one_eq_succ_zero]
   rfl
   cases b with b b
-  rw[mul_zero] at h
+  rewrite[mul_zero] at h
   exact False.elim (zero_ne_succ 0 h)
-  rw[mul_succ,add_succ,add_succ,eq_comm] at h
+  rewrite[mul_succ,add_succ,add_succ,eq_comm] at h
   exact False.elim (zero_ne_succ _ (succ_inj _ _ h))
 Conclusion "
 お疲れ様です。

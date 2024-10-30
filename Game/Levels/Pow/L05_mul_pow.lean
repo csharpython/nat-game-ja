@@ -22,12 +22,12 @@ TheoremDoc MyGame.mul_pow as "mul_pow" in "^"
 /--$∀\{x,a,b\}∈ℕ³→(ab)^x=a^x b^x$-/
 Statement mul_pow (x a b:ℕ) : (a * b) ^ x = a ^ x * b ^ x := by
   induction x
-  rw[pow_zero,pow_zero,pow_zero,mul_one]
+  rewrite[pow_zero,pow_zero,pow_zero,mul_one]
   rfl
   Hint "`mul_comm`を使うとき、その後ろに何かしらを指定する必要があります。"
-  rw[pow_succ,pow_succ,pow_succ,n_ih,mul_assoc]
-  repeat rw[mul_comm (b^n)]
-  repeat rw[←mul_assoc]
+  rewrite[pow_succ,pow_succ,pow_succ,n_ih,mul_assoc]
+  repeat rewrite[mul_comm (b^n)]
+  repeat rewrite[←mul_assoc]
   rfl
 
 Conclusion "Nice try!"

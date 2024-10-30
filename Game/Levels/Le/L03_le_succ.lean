@@ -27,8 +27,8 @@ TheoremDoc MyGame.le_succ as "le_succ" in "≤"
 /--$∀n∈ℕ,n ≤ n′$-/
 Statement le_succ (n:ℕ) : n ≤ n′ := by
   Hint(hidden := true) "add_one_eq_succ"
-  use 1
-  rw[add_one_eq_succ]
+  exists 1
+  rewrite[add_one_eq_succ]
   rfl
 Conclusion "
 使える定理を振り返ることはいつでも大事ですよ！

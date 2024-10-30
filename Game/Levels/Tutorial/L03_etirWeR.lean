@@ -18,18 +18,18 @@ Introduction"
 
 /--$x,y,z$が全て自然数で、$z=x$かつ$z=y$なら$x+y=z+z$。-/
 Statement (x y z:ℕ)(h1 : z = x)(h2 : z = y) : x + y = z + z := by
-  Hint (hidden := true) "`rw`のマニュアルは読みましたか？"
+  Hint (hidden := true) "`rewrite`のマニュアルは読みましたか？"
   Branch
-    rw[h2] at h1
+    rewrite[h2] at h1
     Hint (strict := true) "イースターエッグ発見！ #2"
-    rw[h2,h1]
+    rewrite[h2,h1]
     rfl
   Branch
-    rw[h1] at h2
+    rewrite[h1] at h2
     Hint (strict := true) "イースターエッグ発見！ #2"
-    rw[h1,h2]
+    rewrite[h1,h2]
     rfl
-  rw[←h1,←h2]
+  rewrite[←h1,←h2]
   rfl
 
 Conclusion "このように、数学では

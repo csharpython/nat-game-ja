@@ -35,7 +35,7 @@ Statement mul_eq_zero (a b:ℕ)(h:a*b=0) : a = 0 ∨ b = 0:= by
   cases b with b
   apply Or.inr
   rfl
-  rw[mul_succ,add_succ,eq_comm] at h
+  rewrite[mul_succ,add_succ,eq_comm] at h
   exact False.elim (zero_ne_succ _ h)
 Conclusion "
 次行きましょう。

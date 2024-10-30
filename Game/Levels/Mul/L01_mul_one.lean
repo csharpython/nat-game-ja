@@ -51,7 +51,7 @@ NewTheorem MyGame.mul_zero MyGame.mul_succ
 /--$∀n∈ℕ,n × 1 = n$-/
 Statement mul_one (n:ℕ) : n * 1 = n := by
   Hint "1って何だっけ?"
-  rw[one_eq_succ_zero,mul_succ,mul_zero,zero_add]
+  rewrite[one_eq_succ_zero,mul_succ,mul_zero,zero_add]
   rfl
 
 Conclusion "

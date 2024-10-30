@@ -48,7 +48,7 @@ TheoremDoc MyGame.mul_left_ne_zero as "mul_left_ne_zero" in "*"
 Statement mul_left_ne_zero (a b:ℕ)(h:a*b≠0) : b≠0 := by
   Hint "`intro`でどうぞ。"
   intro i
-  rw[i,mul_zero] at h
+  rewrite[i,mul_zero] at h
   Hint "ここで`0≠0`は`(0=0)→False`の略記であることを思い出しましょう"
   apply h
   rfl

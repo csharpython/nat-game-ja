@@ -26,7 +26,7 @@ TheoremDoc MyGame.zero_pow as "zero_pow" in "^"
 
 /--$∀x∈ℕ,0^{x′}=0$-/
 Statement zero_pow (x:ℕ) : 0 ^ x′ = 0 := by
-  rw[pow_succ,mul_zero]
+  rewrite[pow_succ,mul_zero]
   rfl
 
 Conclusion "ちなみに、$0^0=1$です。このゲームの中では..."

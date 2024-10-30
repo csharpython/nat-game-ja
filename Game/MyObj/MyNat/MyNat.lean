@@ -1,5 +1,3 @@
-import Game.MyObj.MyNat.ExTag -- MyNat_decide attribute
-
 /-- Our copy of the natural numbers called `MyNat`, with notation `ℕ`. -/
 inductive MyNat where
 | zero : MyNat
@@ -18,16 +16,14 @@ namespace MyGame
 instance : Inhabited MyNat where
   default := MyNat.zero
 
-@[MyNat_decide]
 def ofNat (x : Nat) : MyNat :=
   match x with
   | Nat.zero   => MyNat.zero
   | Nat.succ b => (ofNat b)′
 
-@[MyNat_decide]
 def toNat (x : MyNat) : Nat :=
   match x with
-  | MyNat.zero   => Nat.zero
+  | MyNat.zero   => 0
   | b′ => Nat.succ (toNat b)
 
 instance instofNat {n : Nat} : OfNat MyNat n where
@@ -36,7 +32,6 @@ instance instofNat {n : Nat} : OfNat MyNat n where
 instance : ToString MyNat where
   toString p := toString (toNat p)
 
-@[MyNat_decide]
 theorem zero_eq_0 : MyNat.zero = 0 := rfl
 
 def one : MyNat := 0′

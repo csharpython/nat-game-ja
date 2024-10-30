@@ -32,13 +32,13 @@ Statement le_total (a b:ℕ) : a ≤ b ∨ b′ ≤ a := by
   Hint(hidden := true)"ついでに`{w}`もcases！"
   cases w
   apply Or.inr
-  use 0
-  rw[add_zero] at h_1
-  rw[h_1,add_zero]
+  exists 0
+  rewrite[add_zero] at h_1
+  rewrite[h_1,add_zero]
   rfl
   apply Or.inl
-  use a
-  rw[h_1,succ_add,add_succ]
+  exists a
+  rewrite[h_1,succ_add,add_succ]
   rfl
   exact Or.inr ( le_trans _ n _ h ( le_succ n ))
 Conclusion "

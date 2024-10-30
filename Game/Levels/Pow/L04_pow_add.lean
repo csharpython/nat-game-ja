@@ -26,9 +26,9 @@ TheoremDoc MyGame.pow_add as "pow_add" in "^"
 Statement pow_add (x a b:ℕ) : x ^ (a + b) = x ^ a * x ^ b := by
   Hint(hidden := true) "まあ、`induction b`ですね。"
   induction b
-  rw[pow_zero,add_zero,mul_one]
+  rewrite[pow_zero,add_zero,mul_one]
   rfl
-  rw[add_succ,pow_succ,pow_succ,n_ih,mul_assoc]
+  rewrite[add_succ,pow_succ,pow_succ,n_ih,mul_assoc]
   rfl
 
 Conclusion "私は競プロ勢なので、double型はあまり使いません　by 作者"

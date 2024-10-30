@@ -24,7 +24,7 @@ TheoremDoc MyGame.add_left_eq_self as "add_left_eq_self" in "+"
 DisabledTactic rfl
 /--$∀{x,y}∈ℕ^2,x + y = y → x = 0$-/
 Statement add_left_eq_self (x y:ℕ)(h:x + y = y) : x = 0 := by
-  rw[add_comm] at h
+  rewrite[add_comm] at h
   exact add_right_eq_self y x h
 Conclusion "
 `apply`と`exact`を使いこなせましたか？さあ、次のレベルで確認してみましょう！

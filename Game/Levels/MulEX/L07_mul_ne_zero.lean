@@ -8,7 +8,7 @@ Title "対偶(mul_ne_zero)"
 namespace MyGame
 
 Introduction "
-**`rw`、`rfl`無効**
+**`rewrite`、`rfl`無効**
 対偶とは何でしょうか？
 "
 /--
@@ -26,7 +26,7 @@ $a,b$を自然数とする。$a≠0$かつ$b≠0$なら$ab≠0$である。
 -/
 TheoremDoc MyGame.mul_ne_zero as "mul_ne_zero" in "*"
 
-DisabledTactic rw rfl
+DisabledTactic rewrite rfl
 /--$∀\{a,b\}∈ℕ²,(a≠0∧b≠0)→ab≠0$-/
 Statement mul_ne_zero (a b:ℕ)(h:a≠0∧b≠0) : a*b≠0:= by
   contrapose! h

@@ -25,17 +25,17 @@ Statement mul_add (a b c:ℕ) : a * (b + c) = a * b + a * c := by
   Branch
     induction a
     Hint (strict := true) "aの帰納法で始めるのだけはやめろ...正直言って、一番面倒だ..."
-    repeat rw[zero_mul]
-    rw[add_zero]
+    repeat rewrite[zero_mul]
+    rewrite[add_zero]
     rfl
-    rw[succ_mul,succ_mul,succ_mul]
-    rw[←add_assoc,←add_assoc,n_ih,add_right_comm (n*b)]
+    rewrite[succ_mul,succ_mul,succ_mul]
+    rewrite[←add_assoc,←add_assoc,n_ih,add_right_comm (n*b)]
     rfl
   induction b
-  rw[mul_zero]
-  repeat rw[zero_add]
+  rewrite[mul_zero]
+  repeat rewrite[zero_add]
   rfl
-  rw[succ_add,mul_succ,mul_succ,n_ih,add_right_comm]
+  rewrite[succ_add,mul_succ,mul_succ,n_ih,add_right_comm]
   rfl
 Conclusion "
 🎉

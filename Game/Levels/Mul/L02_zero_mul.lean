@@ -28,7 +28,7 @@ TheoremDoc MyGame.zero_mul as "zero_mul" in "*"
 Statement zero_mul (n:ℕ) : 0 * n = 0 := by
   induction n
   exact mul_zero 0
-  rw[mul_succ,n_ih,add_zero]
+  rewrite[mul_succ,n_ih,add_zero]
   rfl
 Conclusion "
 掛け算も、意外と簡単ですね。

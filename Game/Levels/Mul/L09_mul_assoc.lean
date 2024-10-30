@@ -28,9 +28,9 @@ Statement mul_assoc (a b c:ℕ) : (a * b) * c = a * (b * c) := by
   先ほど証明した`mul_add`を活用できるはずです。
   今まで証明した定理を振り返るのも大事ですよ。"
   induction b
-  rw[zero_mul,mul_zero,zero_mul]
+  rewrite[zero_mul,mul_zero,zero_mul]
   rfl
-  rw[mul_succ,succ_mul,mul_add,add_mul,n_ih]
+  rewrite[mul_succ,succ_mul,mul_add,add_mul,n_ih]
   rfl
 Conclusion "
 おつかれさま～

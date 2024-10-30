@@ -39,7 +39,7 @@ NewTheorem MyGame.add_succ MyGame.one_eq_succ_zero
 /--$∀a∈ℕ,a+1=a′$-/
 Statement add_one_eq_succ {a : ℕ} : a + 1 = a′ := by
   Hint "$1$の定義はなんでしたか？"
-  rw[one_eq_succ_zero,add_succ,add_zero]
+  rewrite[one_eq_succ_zero,add_succ,add_zero]
   rfl
 
 Conclusion "

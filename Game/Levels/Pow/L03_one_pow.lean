@@ -24,7 +24,7 @@ TheoremDoc MyGame.one_pow as "one_pow" in "^"
 Statement one_pow (x:ℕ) : 1 ^ x = 1 := by
   induction x
   exact pow_zero 1
-  rw[pow_succ,mul_one]
+  rewrite[pow_succ,mul_one]
   exact n_ih
 
 Conclusion "普段と変わらない日常も好きです。by 作者"

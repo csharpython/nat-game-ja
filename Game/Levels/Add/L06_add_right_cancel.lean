@@ -20,7 +20,7 @@ TacticDoc apply
 namespace MyGame
 Introduction "
 ## 新しいタクティク:`apply`
-`rw`とはまた違ったゴールの書き換え方を紹介します。
+`rewrite`とはまた違ったゴールの書き換え方を紹介します。
 これは、「$P$ならば$Q$」のような形の仮定に使えるものです
 `apply`では、$P$ならば$Q$かつ$P$なら$Q$であるということを使えます！
 早速使っていきましょう！
@@ -42,12 +42,12 @@ TheoremDoc MyGame.succ_inj as "succ_inj" in "ℕ"
 Statement add_right_cancel (x y n:ℕ)(h:x + n = y + n) : x = y := by
   Hint (strict := true) "とりあえず`induction n`しましょうか。"
   induction n
-  rw[add_zero,add_zero] at h
-  rw[h]
+  rewrite[add_zero,add_zero] at h
+  rewrite[h]
   rfl
   Hint (hidden := true) "succ.injが使えるように変形してみましょう。"
-  rw[add_succ,add_succ] at h
-  rw[n_ih (succ_inj _ _ h)]
+  rewrite[add_succ,add_succ] at h
+  rewrite[n_ih (succ_inj _ _ h)]
   rfl
 Conclusion "
 もう一つの書き換えのやり方はわかりましたか？

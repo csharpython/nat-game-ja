@@ -26,17 +26,17 @@ TheoremDoc MyGame.one_mul as "one_mul" in "*"
 /--$∀n∈ℕ,1 × n = n$-/
 Statement one_mul (n:ℕ) : 1 * n = n := by
   Branch
-    rw[mul_comm]
+    rewrite[mul_comm]
     Hint "たぶんこれが一番早いと思います"
-    rw[mul_one]
+    rewrite[mul_one]
     rfl
   induction n
   exact mul_zero 1
-  rw[mul_succ,n_ih]
+  rewrite[mul_succ,n_ih]
   Branch apply add_one_eq_succ
-  rw[one_eq_succ_zero]
+  rewrite[one_eq_succ_zero]
   Hint "イースターエッグ発見！ #3"
-  rw[add_succ,add_zero]
+  rewrite[add_succ,add_zero]
   rfl
 Conclusion "
 いろいろな方法で証明ができるぞ...!

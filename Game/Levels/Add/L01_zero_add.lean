@@ -41,9 +41,9 @@ TheoremDoc MyGame.zero_add as "zero_add" in "+"
 Statement zero_add {x:ℕ} : 0 + x = x := by
   Hint "`induction x`"
   induction x
-  rw[add_zero]
+  rewrite[add_zero]
   rfl
-  rw[add_succ,n_ih]
+  rewrite[add_succ,n_ih]
   rfl
 
 Conclusion "

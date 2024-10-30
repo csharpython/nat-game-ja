@@ -25,10 +25,10 @@ TheoremDoc MyGame.add_comm as "add_comm" in "+"
 Statement add_comm (x y:ℕ) : x + y = y + x := by
   Hint "どちらを選んでもいいです。とりあえずxについて帰納法しましょうか。"
   induction x
-  rw[add_zero,zero_add]
+  rewrite[add_zero,zero_add]
   rfl
   Hint(hidden := true)(strict := true) "{n_ih} が使えるように、式を変形してみましょう。`succ_add`が使えるはずです。"
-  rw[succ_add,add_succ,n_ih]
+  rewrite[succ_add,add_succ,n_ih]
   rfl
 Conclusion "
 お疲れさまでした！このように、整数絡みの問題では帰納法が役立つことが多いです！

@@ -16,13 +16,13 @@ $∃$について説明しましょう。
 $∃v,P(v)$は$P(v)$を満たす$v$があることを表しています。
 このような形の命題を証明するときは、条件を満たす具体的な値`w`を見つけ、
 
-## `use w`
+## `exists w`
 
 を使えばよいです！
 
 ## ≤の意味
 `a ≤ b`と`∃ (c : ℕ), b = a + c`は同じ意味です。
-そのため、`use`が使えます！
+そのため、`exists`が使えます！
 "
 
 TheoremTab "≤"
@@ -50,21 +50,21 @@ NewDefinition MyGame.le Exists
 
 /--
 ## 説明
-`∃v,P(v)`に対して、`use w`を使うと、ゴールが`P(w)`に変化します。
+`∃v,P(v)`に対して、`exists w`を使うと、ゴールが`P(w)`に変化します。
 -/
-TacticDoc use
+TacticDoc «exists»
 
 /--$∀n∈ℕ,0 ≤ n$-/
 Statement zero_le (n:ℕ) : 0 ≤ n := by
-  Hint "`use n`"
-  use n
-  rw[zero_add]
+  Hint "`exists n`"
+  exists n
+  rewrite[zero_add]
   rfl
 Conclusion "
 ≤も、意外と簡単ですね。
 "
 
-NewTactic use
+NewTactic «exists»
 /- Use these commands to add items to the game's inventory. -/
 
 -- NewTactic induction

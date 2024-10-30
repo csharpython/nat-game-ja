@@ -27,17 +27,17 @@ TheoremDoc MyGame.add_assoc as "add_assoc" in "+"
 Statement add_assoc (x y z:ℕ) : x + y + z = x + (y + z) := by
   Hint "たぶんzに対して帰納法するのが一番楽です。"
   induction z
-  repeat rw[add_zero]
+  repeat rewrite[add_zero]
   rfl
-  rw[add_succ,add_succ,add_succ,n_ih]
+  rewrite[add_succ,add_succ,add_succ,n_ih]
   rfl
 Conclusion "
 私の回答を載せておきますね：
 ```
 induction z
-repeat rw[add_zero]
+repeat rewrite[add_zero]
 rfl
-rw[add_succ,add_succ,add_succ,n_ih]
+rewrite[add_succ,add_succ,add_succ,n_ih]
 rfl
 ```
 "

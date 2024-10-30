@@ -36,26 +36,26 @@ Statement mul_right_cancel (a b x:ℕ)(hx:x≠0)(h:a*x=b*x) : a=b := by
   Hint (hidden := true) "`induction {a}`"
   induction a with a h
   · intro b i
-    rw[zero_mul,eq_comm] at i
+    rewrite[zero_mul,eq_comm] at i
     apply mul_eq_zero at i
     cases i with i i
-    · rw[i]
+    · rewrite[i]
       rfl
     · exact False.elim (hx i)
   · intro b
     Hint (hidden := true) "`cases {b}`"
     cases b with c hc
     · intro i
-      rw[zero_mul,succ_mul] at i
+      rewrite[zero_mul,succ_mul] at i
       cases x with x x
       · apply False.elim∘hx
         rfl
-      · rw[add_succ,eq_comm] at i
+      · rewrite[add_succ,eq_comm] at i
         exact False.elim (zero_ne_succ _ i)
-    · rw[succ_mul,succ_mul]
+    · rewrite[succ_mul,succ_mul]
       intro i
       apply add_right_cancel at i
-      rw[h c i]
+      rewrite[h c i]
       rfl
 Conclusion "
 この問題はEXTRAの中でも最強...!

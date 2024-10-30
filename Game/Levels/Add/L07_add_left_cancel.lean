@@ -32,12 +32,12 @@ TheoremDoc MyGame.add_left_cancel as "add_left_cancel" in "+"
 DisabledTactic rfl
 /--$∀\{x,y,n\}∈ℕ^3,n + x = n + y → x = y$-/
 Statement add_left_cancel (x y n:ℕ)(h:n + x = n + y) : x = y := by
-  rw[add_comm] at h
+  rewrite[add_comm] at h
   Hint (hidden := true)(strict := true) "
-ここでただ`rw[add_comm] at h`を行うと、`x + n`が元に戻るだけです。
+ここでただ`rewrite[add_comm] at h`を行うと、`x + n`が元に戻るだけです。
 変数を指定して、`y + n`を交換できるようにしましょう。
 やり方？W+-5を思い出して！"
-  rw[add_comm n] at h
+  rewrite[add_comm n] at h
   Hint (hidden := true)(strict := true) "
 ここでただ`exact add_right_cancel`とするだけでは、(案の定)うまく行きません。
 どうやら今回も、変数**と仮定**を指定する必要がありそうです...

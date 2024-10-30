@@ -37,7 +37,7 @@ Statement le_zero (a:ℕ)(h : a ≤ 0) : a = 0 := by
   cases a
   rfl
   Hint (hidden := true) "Falseを導くためには...?"
-  rw[succ_add] at h_1
+  rewrite[succ_add] at h_1
   exact False.elim (zero_ne_succ _ h_1)
 Conclusion "
 おつかれ！

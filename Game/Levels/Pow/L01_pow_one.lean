@@ -49,7 +49,7 @@ NewTheorem MyGame.pow_zero MyGame.pow_succ
 
 /--$∀x∈ℕ,x^1=x$-/
 Statement pow_one (x:ℕ) : x ^ 1 = x := by
-  rw[one_eq_succ_zero,pow_succ,pow_zero,one_mul]
+  rewrite[one_eq_succ_zero,pow_succ,pow_zero,one_mul]
   rfl
 
 Conclusion "累乗も、意外と簡単ですね。。"

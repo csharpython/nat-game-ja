@@ -1,4 +1,5 @@
 -- Thx https://github.com/leanprover-community/NNG4/blob/main/Game/Tactic/Induction.lean
+-- 一部編集済み
 import Lean.Elab.Tactic.Basic
 import Lean.Elab.Tactic.Induction
 import Std.Tactic.OpenPrivate

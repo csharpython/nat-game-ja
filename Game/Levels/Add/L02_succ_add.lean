@@ -24,9 +24,9 @@ TheoremDoc MyGame.succ_add as "succ_add" in "+"
 Statement succ_add (x y:ℕ) : x′ + y = (x + y)′ := by
   Hint (hidden := true)"`induction y`"
   induction y
-  rw[add_zero,add_zero]
+  rewrite[add_zero,add_zero]
   rfl
-  rw[add_succ,add_succ,n_ih]
+  rewrite[add_succ,add_succ,n_ih]
   rfl
 Conclusion "
 いいですね！

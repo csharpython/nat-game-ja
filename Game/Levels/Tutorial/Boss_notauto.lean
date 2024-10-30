@@ -25,7 +25,7 @@ NewTheorem MyGame.two_eq_succ_one
 
 /--$1+1=2$-/
 Statement : (1 : MyNat) + 1 = 2 := by
-  rw[add_one_eq_succ,two_eq_succ_one]
+  rewrite[add_one_eq_succ,two_eq_succ_one]
   rfl
 
 Conclusion "

@@ -23,9 +23,9 @@ TheoremDoc MyGame.mul_comm as "mul_comm" in "*"
 /--$∀\{n,m\}∈ℕ²,m × n = n ⨯ m$-/
 Statement mul_comm (m n:ℕ) : m * n = n * m := by
   induction n
-  rw[mul_zero,zero_mul]
+  rewrite[mul_zero,zero_mul]
   rfl
-  rw[mul_succ,succ_mul,n_ih]
+  rewrite[mul_succ,succ_mul,n_ih]
   rfl
 Conclusion "
 まだ山場はたくさんあるぞ...!

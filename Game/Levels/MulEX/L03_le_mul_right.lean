@@ -23,8 +23,8 @@ TheoremDoc MyGame.le_mul_right as "le_mul_right" in "*"
 /--$∀\{a,b\}∈ℕ² , a≤a(b′)$-/
 Statement le_mul_right (a b:ℕ) : a  ≤ a * b′ := by
   Hint(hidden := true) "`cases`でどうぞ"
-  use a * b
-  rw[add_comm]
+  exists a * b
+  rewrite[add_comm]
   apply mul_succ
 Conclusion "
 なんか`cases`の役割多くない？

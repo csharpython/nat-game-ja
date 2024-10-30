@@ -1,3 +1,4 @@
+-- from NNG4
 import Game.MyObj.MyNat.Function
 
 namespace MyNat

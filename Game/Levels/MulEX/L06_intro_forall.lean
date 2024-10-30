@@ -29,9 +29,9 @@ NewDefinition Forall
 DisabledTactic exact apply
 /--$∃e∈ℕ,∀n∈ℕ,ne=n$-/
 Statement : ∃(e:ℕ),∀(n:ℕ),n*e=n := by
-  use 1
+  exists 1
   intro
-  rw[mul_one]
+  rewrite[mul_one]
   rfl
 
 Conclusion "

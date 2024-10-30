@@ -7,27 +7,24 @@ Level 2
 Title "Eq."
 
 namespace MyGame
+
 /--
 ## 説明
-例えば、`X=Y`という形の仮定や定理`h`があった場合、rw[h]を使用することで、
+例えば、`X=Y`という形の仮定や定理`h`があった場合、rewrite[h]を使用することで、
 ゴール内の**全ての**`X`が`Y`に置き換わります。
 
 ## 変種
-`rw[←h]` : `Y`が`X`になります。
+`rewrite[←h]` : `Y`が`X`になります。
 
-`rw[h1,h2]` : `rw[h1]`,`rw[h2]`を順番に実行します。
+`rewrite[h1,h2]` : `rewrite[h1]`,`rewrite[h2]`を順番に実行します。
 
-`rw[h1,h2,h3]` : もちろん3つ以上の置き換えも可能です。
+`rewrite[h1,h2,h3]` : もちろん3つ以上の置き換えも可能です。
 
-`rw[h1] at h2` : **`h2`に対して**`rw[h1]`を実行します。
+`rewrite[h1] at h2` : **`h2`に対して**`rewrite[h1]`を実行します。
 
 もしかしたら、私が把握できていないだけで他にもあるかも知れません！
-
-## 補足情報
-本来の`rw`は置き換え後に`rfl`を実行します。
-そうしなかった理由は、もちろんゲーム性です。
 -/
-TacticDoc rw
+TacticDoc rewrite
 Introduction "
 ## 新しいタクティク：`rw`
 
@@ -39,12 +36,12 @@ Lean4で同じことを表すものを置き換えるときは`rw`を使いま�
 
 /--$e$と$mc$が自然数で、$e=mc ^ 2$なら$e=mc ^ 2$。-/
 Statement (e mc:ℕ)(h : e = mc ^ 2) : e = mc ^ 2 := by
-  Hint "rw[h]を使おう。"
+  Hint "rewrite[h]を使おう。"
   Branch
-    rw[←h]
+    rewrite[←h]
     Hint "イースターエッグ発見！ #1"
     rfl
-  rw[h]
+  rewrite[h]
   rfl
 
 Conclusion "いいですね！Lean4では、仮定として用意した等式だけでなく、
@@ -54,6 +51,6 @@ Conclusion "いいですね！Lean4では、仮定として用意した等式だ
 それを使わなかった理由はもちろん、ゲーム性を上げるためです。"
 /- Use these commands to add items to the game's inventory. -/
 
-NewTactic rw
+NewTactic rewrite
 -- NewLemma Nat.add_comm Nat.add_assoc
 -- NewDefinition Nat Add Eq

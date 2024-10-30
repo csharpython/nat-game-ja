@@ -28,9 +28,9 @@ TheoremDoc MyGame.pow_mul as "pow_mul" in "^"
 Statement pow_mul (x a b:ℕ) : (x^a)^b = x ^ (a * b) := by
   Hint(hidden := true) "まあ、`induction a`ですね。"
   induction a
-  rw[zero_mul,pow_zero,one_pow]
+  rewrite[zero_mul,pow_zero,one_pow]
   rfl
-  rw[pow_succ,mul_pow,succ_mul,pow_add,n_ih]
+  rewrite[pow_succ,mul_pow,succ_mul,pow_add,n_ih]
   rfl
 
 Conclusion "そろそろ気づいてる人もいると思いますが、

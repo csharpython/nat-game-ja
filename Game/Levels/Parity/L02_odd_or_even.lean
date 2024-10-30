@@ -15,11 +15,11 @@ TheoremTab "2n"
 
 /--
 ## 説明
-0は偶数
+自然数は偶数か奇数
 -/
-TheoremDoc MyGame.odd_or_even as "odd_or_even" in "ℕ"
+TheoremDoc MyGame.odd_or_even as "odd_or_even" in "2n"
 /--
-  自然数が偶数か判定する
+  自然数が奇数か判定する
   `odd n ↔ ∃ (m : ℕ), m*2+1 = n`
 -/
 DefinitionDoc MyGame.odd as "odd"
@@ -33,19 +33,19 @@ Statement odd_or_even(n:ℕ) : even n ∨ odd n := by
   cases hn
   cases h with w h
   apply Or.inr
-  use w
-  rw[h,add_one_eq_succ]
+  exists w
+  rewrite[h,add_one_eq_succ]
   rfl
   cases h with w h
   apply Or.inl
-  use w+1
-  rw[add_mul,one_mul,←h,←add_succ,two_eq_succ_one]
+  exists w+1
+  rewrite[add_mul,one_mul,←h,←add_succ,two_eq_succ_one]
   rfl
 Conclusion "
-0は偶数ですね！
+自然数は偶数か奇数
 "
 
--- NewTactic use
+-- NewTactic exists
 /- Use these commands to add items to the game's inventory. -/
 
 -- NewTactic induction

@@ -24,22 +24,22 @@ Statement le_symm (a b:ℕ)(h1 : a ≤ b)(h2 : b ≤ a) : a = b := by
   cases h2
   Hint (hidden := true) "`a = a + w + w_1`"
   Branch
-    rw[h_1] at h
+    rewrite[h_1] at h
     nth_rewrite 1 [←add_zero b,add_assoc] at h
     apply (add_left_cancel _ _ _) at h
     Hint (strict := true)(hidden := true) "`0 = {w_1}`を示しましょう。`cases {w_1}`でどうぞ。"
     cases w_1
-    rw[h_1,add_zero]
+    rewrite[h_1,add_zero]
     rfl
-    rw[succ_add] at h
-  rw[h] at h_1
+    rewrite[succ_add] at h
+  rewrite[h] at h_1
   nth_rewrite 1 [←add_zero a,add_assoc] at h_1
   apply (add_left_cancel _ _ _) at h_1
   Hint (strict := true)(hidden := true) "`0 = {w}`を示しましょう。`cases {w}`でどうぞ。"
   cases w
-  rw[h,add_zero]
+  rewrite[h,add_zero]
   rfl
-  rw[succ_add] at h_1
+  rewrite[succ_add] at h_1
   exact False.elim (zero_ne_succ _ h_1)
 Conclusion "
 おつかれ！

@@ -24,12 +24,12 @@ TheoremDoc MyGame.succ_mul as "succ_mul" in "*"
 Statement succ_mul (m n:ℕ) : m′ * n = m * n + n := by
   Hint "他の定理の証明を振り返ってみることは大切です。意外と形が似ていることが多いです。"
   induction n
-  rw[mul_zero,mul_zero,add_zero]
+  rewrite[mul_zero,mul_zero,add_zero]
   rfl
   Hint (hidden := true) "`mul_succ`を使って、ゴールをシンプルにしてみましょう。"
-  rw[mul_succ,mul_succ,n_ih]
+  rewrite[mul_succ,mul_succ,n_ih]
   Hint (hidden := true) "うまいこと足す順番を入れ替えたら、証明できる気がしませんか？"
-  rw[add_succ,add_succ,add_right_comm]
+  rewrite[add_succ,add_succ,add_right_comm]
   rfl
 Conclusion "
 さて、`mul_comm`の証明に挑みましょう！

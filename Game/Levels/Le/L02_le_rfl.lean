@@ -28,8 +28,8 @@ TheoremDoc MyGame.le_rfl as "le_rfl" in "≤"
 /--$∀n∈ℕ,n ≤ n$-/
 Statement le_rfl (n:ℕ) : n ≤ n := by
   Hint(hidden := true) "add_zero"
-  use 0
-  rw[add_zero]
+  exists 0
+  rewrite[add_zero]
   rfl
 Conclusion "
 誰かわかる人、教えてください

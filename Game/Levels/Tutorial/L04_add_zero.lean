@@ -52,8 +52,8 @@ NewTheorem MyGame.add_zero
 
 /--$∀\{a,b,c\}∈ℕ^3,a + (b + 0) + (c + 0) = a + b + c$-/
 Statement (a b c : ℕ) : a + (b + 0) + (c + 0) = a + b + c := by
-  Hint "`rw[add_zero]`で`b+0`が`b`になります。"
-  rw[add_zero,add_zero]
+  Hint "`rewrite[add_zero]`で`b+0`が`b`になります。"
+  rewrite[add_zero,add_zero]
   rfl
 
 Conclusion "実は、`repeat (Tactic)`を使うと、

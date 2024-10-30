@@ -22,7 +22,7 @@ TheoremDoc MyGame.two_mul as "two_mul" in "*"
 
 /--$∀n∈ℕ,2 × n = n + n$-/
 Statement two_mul (n:ℕ) : 2 * n = n + n := by
-  rw[two_eq_succ_one,succ_mul,one_mul]
+  rewrite[two_eq_succ_one,succ_mul,one_mul]
   rfl
 Conclusion "
 これ絶対数合わせだよね？？？
